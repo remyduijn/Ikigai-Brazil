@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en" translate="no"> 
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brazil Travel & Immigration</title>
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+   <!--Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+  <!-- font-family Paytone One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap" rel="stylesheet">
+
+
+<script>
+  //collapse nav-bar when clicked outside
+  window.onclick = function(event){
+      if(!event.target.matches('.navbar-toggler')){
+            $(".navbar-collapse").collapse("hide");
+      }
+  } 
+
+
+
+  var clicks = 0;
+  var clicks2 = 0;
+
+  function onClick() {
+    clicks += 1;
+    // document.getElementById("clicks").innerHTML = clicks;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+
+    if (clicks == "0")
+    {
+      document.getElementById("steps").style.display = "none"
+      document.getElementById("steps3").style.display = "none"
+      document.getElementById("result").innerHTML = ""
+      document.getElementById("result3").innerHTML = ""
+
+      if (clicks == "0" && clicks2 == "0")
+      {
+        height.style.lineHeight = ""    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "0" && clicks2 == "1")
+      {
+        height.style.lineHeight = "1.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "0" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "0" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "1")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "#2e57c7"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "#2e57c7"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.5x)"
+      document.getElementById("result3").innerHTML = "(1.5x)"
+
+      if (clicks == "1" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2rem"    
+        size.fontSize = "1rem"
+      }
+      if (clicks == "1" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "1" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "1" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "2")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "#2e57c7"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "#2e57c7"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.75x)"
+      document.getElementById("result3").innerHTML = "(1.75x)"
+
+      if (clicks == "2" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2.5rem"    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "2" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "2" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "2" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "3")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "#2e57c7"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "#2e57c7"
+      document.getElementById("result").innerHTML = "(2x)"
+      document.getElementById("result3").innerHTML = "(2x)"
+
+      if (clicks == "3" && clicks2 == "0")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1rem"    
+      }
+      if (clicks == "3" && clicks2 == "1")
+      {
+        height.style.lineHeight = "3.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "3" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "3" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+      
+      clicks -= 4;
+    }
+  };
+
+
+
+  function onClick2() {
+    clicks2 += 1;
+    // document.getElementById("clicks2").innerHTML = clicks2;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+    var size2 = document.getElementsByClassName("size2");
+    var size3 = document.getElementsByClassName("size3");
+
+    if (clicks2 == "0")
+    {
+      document.getElementById("steps2").style.display = "none"
+      document.getElementById("steps4").style.display = "none"
+      document.getElementById("result2").innerHTML = ""
+      document.getElementById("result4").innerHTML = ""
+      size.style.fontSize = "1rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.5rem"}
+      size3[0].style.fontSize = "1.2rem"
+      size3[1].style.fontSize = "1.2rem"
+      size3[2].style.fontSize = "1.2rem"
+      size3[3].style.fontSize = "1.2rem"
+      size3[4].style.fontSize = "1.2rem"
+      size3[5].style.fontSize = "1.2rem"
+      size3[6].style.fontSize = "1.2rem"
+      size3[7].style.fontSize = "1.2rem"
+
+      if (clicks2 == "0" && clicks == "0")
+      {
+        height.style.lineHeight = ""
+      }
+      if (clicks2 == "0" && clicks == "1")
+      {
+        height.style.lineHeight = "2rem"
+      }
+      if (clicks2 == "0" && clicks == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+      }
+      if (clicks2 == "0" && clicks == "-1")
+      {
+        height.style.lineHeight = "3rem"
+      }
+    }
+
+    if (clicks2 == "1")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "#2e57c7"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "#2e57c7"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(m)"
+      document.getElementById("result4").innerHTML = "(m)"
+      size.style.fontSize = "1.2rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.6rem"}
+      size3[0].style.fontSize = "1.4rem"
+      size3[1].style.fontSize = "1.4rem"
+      size3[2].style.fontSize = "1.4rem"
+      size3[3].style.fontSize = "1.4rem"
+      size3[4].style.fontSize = "1.4rem"
+      size3[5].style.fontSize = "1.4rem"
+      size3[6].style.fontSize = "1.4rem"
+      size3[7].style.fontSize = "1.4rem"
+
+      if (clicks2 == "1" && clicks == "0")
+      {
+        height.style.lineHeight = "1.7rem" 
+      }
+      if (clicks2 == "1" && clicks == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+      }
+      if (clicks2 == "1" && clicks == "2")
+      {
+        height.style.lineHeight = "2.7rem"
+      }
+      if (clicks2 == "1" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.2rem"
+      }
+    }
+
+    if (clicks2 == "2")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "#2e57c7"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "#2e57c7"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(l)"
+      document.getElementById("result4").innerHTML = "(l)"
+      size.style.fontSize = "1.5rem"  
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.8rem"}
+      size3[0].style.fontSize = "1.6rem"
+      size3[1].style.fontSize = "1.6rem"
+      size3[2].style.fontSize = "1.6rem"
+      size3[3].style.fontSize = "1.6rem"
+      size3[4].style.fontSize = "1.6rem"
+      size3[5].style.fontSize = "1.6rem"
+      size3[6].style.fontSize = "1.6rem"
+      size3[7].style.fontSize = "1.6rem"
+
+      if (clicks2 == "2" && clicks == "0")
+      {
+        height.style.lineHeight = "2rem"   
+      }
+      if (clicks2 == "2" && clicks == "1")
+      {
+        height.style.lineHeight = "2.5rem"   
+      }
+      if (clicks2 == "2" && clicks == "2")
+      {
+        height.style.lineHeight = "3rem"   
+      }
+      if (clicks2 == "2" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.5rem"   
+      }
+    }
+
+    if (clicks2 == "3")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "#2e57c7"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "#2e57c7"
+      document.getElementById("result2").innerHTML = "(xl)"
+      document.getElementById("result4").innerHTML = "(xl)"
+      size.style.fontSize = "1.8rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "2rem"}
+      size3[0].style.fontSize = "1.8rem"
+      size3[1].style.fontSize = "1.8rem"
+      size3[2].style.fontSize = "1.8rem"
+      size3[3].style.fontSize = "1.8rem"
+      size3[4].style.fontSize = "1.8rem"
+      size3[5].style.fontSize = "1.8rem"
+      size3[6].style.fontSize = "1.8rem"
+      size3[7].style.fontSize = "1.8rem"
+
+      if (clicks2 == "3" && clicks == "0")
+      {
+        height.style.lineHeight = "2.3rem" 
+      }
+      if (clicks2 == "3" && clicks == "1")
+      {
+        height.style.lineHeight = "2.8rem" 
+      }
+      if (clicks2 == "3" && clicks == "2")
+      {
+        height.style.lineHeight = "3.3rem"
+      }
+      if (clicks2 == "3" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.8rem"   
+      }
+      
+      clicks2 -= 4; 
+    } 
+  };
+
+</script>
+
+
+<style>
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.padding{
+  padding-bottom: 20px;
+}
+
+.img-fluid{
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.color6{
+  color: #2089ac;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.custom{
+  text-shadow: black 0px 0px 10px;
+}
+
+.custom2{
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.8);
+}
+
+.font1{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.font2{
+  font-size: 1.3rem;
+  font-weight: 300; 
+}
+
+.font4{
+  font-family: 'Raleway', sans-serif;
+}
+
+.font5{
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.btn {
+  text-align: center;
+  color: #1d809f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  width: 100%;
+  background-color: var(--lgt-blue);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--lgt-blue);
+  border-color: var(--lgt-blue);
+}
+
+.floatb{
+  margin-left: 15px;
+  margin-top: 35px;
+  max-width: 65px;
+  font-size:1.5rem;
+}
+@media (min-width:1700px){
+  .floatb{
+    margin-top: 44px;
+}}
+
+.card-body{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.display2{
+  display:none;
+}
+@media (max-width:992px){.display2{display:block;}}
+
+@media (max-width:992px){.display3{display:none;}}
+
+.padding2{
+  margin-top:-1rem;
+}
+
+.padding2-2{
+  margin-top:-6rem;
+}
+
+.padding3{
+  padding-bottom: 5px;
+}
+
+.padding4{
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+.padding5{
+  font-size: 15px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+}
+
+.autocom-box{
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.btn-nav4{
+  color:#22b294!important;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #22b29500!important;
+} 
+.btn-nav4:hover{
+  background-color:#22b294!important;
+  color: white!important;
+  border: 1px solid #22b294!important;
+  border-radius: 5px;
+}
+
+.margin2{
+  margin-top: 0.5rem;
+}
+@media (min-width:768px){
+  .margin2{
+    margin-top: 1rem;
+}}
+@media (min-width:1700px){
+  .margin2{
+    margin-left:-100px; 
+    margin-right:-100px;
+    margin-top: 3rem;
+}}
+
+@media (max-width:768px){.post-title {font-size:1.7rem;}}
+
+.line-icon{
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  opacity: 0.8;
+}
+
+.box{
+  background-color: white;
+  width: 280px;
+  border-radius: 3px;
+}
+.box:hover{background-color: #f7f7f7;  cursor: pointer;}
+
+.box2{
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.box3{
+  border-right: 1px solid #e0e0e0;
+}
+
+.steps{
+  margin-top: -0.6rem;
+  margin-bottom: -0.3rem;
+  display: none;
+  opacity: 0.8;
+}
+
+.legibility{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.legibility2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.break{
+  padding-bottom: 0.7rem;
+}
+
+.minbreak{
+  margin-bottom: -1px;
+}
+
+.minbreak2{
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: -1px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+.space{
+  margin-bottom: 1.5rem;
+}
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <br><br>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img2/logos/logoikigai.png" alt=""/></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item upper">
+            <a class="nav-link btn-nav" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="travel.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="immigration.html">Immigration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav2" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.skyscanner.com.br/?currency=EUR&previousCultureSource=COOKIE&redirectedFrom=www.skyscanner.com" target="_blank" rel="noopener noreferrer">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav3 js-scroll-trigger" href="#join">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  
+  
+  <!-- Page Content -->
+  <section class="page-section bg-light">
+   
+  <a class="btn btn-show3 btn-sm floatb" href="articles.html">&#8592;</a>
+  
+  <br>
+  <div class="container">
+
+    <div class="row margin2">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h2 class="mt-4 post-title">How to send money to Brazil</h2>
+        <hr>
+        <!-- Date/Time -->
+        <p>Published on November 1, 2021</p>
+        <hr>
+      </div>
+
+        <!--content widget-->
+        <div class="display2 container">
+          <div class="row justify-content-center"> 
+            <div class="col-11 col-lg-4">                  
+              <div class="padding2">
+                <div class="card my-4">
+                  <h5 style="text-align:left" class="card-header font2">Content</h5>
+                    <div class="card-body autocom-box">
+                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Traditional ways to send money to Brazil</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding4">› Bank transfer directly to the seller</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding5">› Power of attorney</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Alternative ways to send money to Brazil</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted padding4">› Western Union</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="text-muted padding4">› Wise (or comparable services)</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="text-muted padding5">› Open a bank account in Brazil</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="text-muted padding3">Sending money with crypto</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="text-muted padding4">› How bitcoin can be used</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#10"><h6 style="text-align:left" class="text-muted padding4">› Other cryptocurrencies to consider</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#11"><h6 style="text-align:left" class="text-muted minbreak2">› Using an exchange</h6></a>
+                     </div>
+                  </div>
+                </div>
+
+                <!--legibility widget-->
+                <div class="legibility2">
+                  <tr>
+                    <table class="row justify-content-center box2">
+                      <td class="box box3" style="text-align:center" onclick="onClick()">
+                            <div>
+                              <i class="fas fa-align-left line-icon"></i>
+                            </div>
+                            <div class="noselect">
+                              <h6>Line Hight <span id="result"></span></h6>
+                              <div class="steps" id="steps">
+                                <span id="step1">&#8213;</span>
+                                <span id="step2">&#8213;</span>
+                                <span id="step3">&#8213;</span>
+                              </div>
+                            </div>
+                      </td>
+                      <td class="box" style="text-align:center" onclick="onClick2()">
+                            <div>
+                              <i class="fas fa-text-height line-icon"></i>
+                            </div>
+                            <div class="noselect">
+                              <h6>Text Size <span id="result2"></span></h6>
+                              <div class="steps" id="steps2">
+                                <span id="step4">&#8213;</span>
+                                <span id="step5">&#8213;</span>
+                                <span id="step6">&#8213;</span>
+                              </div>
+                            </div>
+                      </td>
+                    </table>   
+                  </tr>
+                </div>
+
+              </div>
+          </div>
+        </div>
+ 
+        
+
+        <div class="col-lg-8" id="height">
+          <div id="size">
+
+          <!-- Post Content -->
+          <p>Sending money to Brazil is more complex than most foreign citizens might expect. Brazil has a history of extreme regulation of money entering and leaving the country. Commercial banks in Brazil such as Bradesco and Itaú may take weeks to release funds until clients have provided many documents required and their slow currency exchange departments have thoroughly reviewed these documents.</p>
+          <p class="space">Unfortunately, it is not uncommon for foreign buyers of real estate in Brazil to have to wait weeks or even months for their money to be liberated, or being unable to send funds to the seller despite diligent communication with their banks.</p>
+          <br>
+
+          <p style="text-align:left" class="font1 size2" id="1">Traditional ways to send money to Brazil</p>
+          <hr>
+          <p>In terms of how to send money when buying real estate in Brazil, there are two main approaches:</p>
+          <p style="text-align:left" class="font5 size3" id="2"><u>Bank transfer directly to the seller</u></p>
+          <p>Sending a payment directly by bank transfer to the seller may be the preferred approach for sending a smaller downpayment (e.g., no more than 10% of the total purchase price).</p>
+          <p>It is not advised to send large amounts to the seller by bank transfer previous to having the property registered to your name. Sending a full payment to sellers before the closing will put you in a very fragile position since a seller may not necessarily attend the closing later on (e.g., seller dies between payment and closing date, seller changes his mind about selling or intends to defraud the buyer).</p>
+          <p style="text-align:left" class="font5 size3" id="3"><u>Power of attorney</u></p>
+          <p>Through a power of attorney (POA), you can have a lawyer or a family member representing you at the closing. A valid POA allows you to transfer the closing funds to the POA holder instead of the seller.</p>
+          <p class="space">The POA holder can then use your funds to obtain a certified check at his bank and use this certified check to pay the seller during the closing. The advantage of this approach is that the seller will not get your money until the moment that they sign the transfer of title.</p>
+          <br>
+
+          <p style="text-align:left" class="font1 size2" id="4">Alternative ways to send money to Brazil</p>
+          <hr>
+          <p>Until a few years ago, most of todays international money transfer services were not authorized to work in Brazil, but barriers have been gradually reduced for such services to operate in Brazil as well as red tape across the administration's departments.</p>
+          <p style="text-align:left" class="font5 size3" id="5"><u>Western Union</u></p>
+          <p>Today <a class="btn-nav4" href="http://ssqt.co/mQnHXI1" target="_blank" rel="noopener noreferrer">Western Union</a> operates in most main Brazilian cities. While you can send money to Brazil by depositing in a Western Union store in your country of residency for the Brazilian counterparty to withdraw the funds in Brazil, most remittances are capped at really low amounts. Most stores will limit the remittance to US$5,000 while others will have even lower limits.</p>
+          <p style="text-align:left" class="font5 size3" id="6"><u>Wise (or comparable services)</u></p>
+          <p><a class="btn-nav4" href="https://wise.prf.hn/click/camref:1101lkuvN" target="_blank" rel="noopener noreferrer">Wise</a> is currently considered the easiest way to send money to Brazil. While it is not clear how much Wise operations have been vetted by the Brazilian authorities, a large number of foreign individuals successfully send money to Brazil through Wise. </p>
+          <p>Just like Western Union, Wise is also limited to lower amounts. However, it looks like Wise actually allows larger amounts to be sent to Brazil; up to US$10,000, without having to show any documentation. Sending larger amounts is possible as well, but quite some documentation needs to be presented and it might take longer to process your transfer.</p>
+          <p>Among the alternatives to Wise are <a class="btn-nav4" href="https://www.worldremit.com/en" target="_blank" rel="noopener noreferrer">WorldRemit</a> and <a class="btn-nav4" href="http://remit.ly/14hyuyl" target="_blank" rel="noopener noreferrer">Remitly</a>. The most important thing these companies have in common is transparency. From the start, it's easy to find out what exchange rates and fees you'll pay when sending money overseas. However, unlike Wise, they specialise in sending smaller transfer amounts.</p>
+          <p style="text-align:left" class="font5 size3" id="7"><u>Open a bank account in Brazil</u></p>
+          <p>By opening a bank account in Brazil you may be able to transfer your funds from abroad to your bank account in Brazil. Most banks will still require you to send money through a traditional wire transfer, meaning you may still be requested documents to release the money in Brazil.</p>
+          <p class="space">If buying a property in Brazil, you could then issue a certified check with the funds from your Brazilian bank to attend the closing in person. Your check should be handed to the seller only after the seller signs the transfer of title.</p>
+          <br>
+          
+          <p style="text-align:left" class="font1 size2" id="8">Sending money with crypto</p>
+          <hr>
+          <p>Bitcoin may have an attractive use in the overseas remittance market. By using cryptocurrency as a medium to send money overseas, users may be able to avoid some of the high costs charged by traditional banks and money transfer services.</p>
+          <p>In a typical remittance payment, a customer in the origin country pays local currency to a Money Transfer Operator (MTO). The recipient can then collect the money in the currency of the destination country, minus any fees by the MTO.</p>
+          <p>This financial infrastructure is expensive to use, particularly for smaller remittances. The World Bank found that a remittance of $200 can incur average fees between 5% and 9.3%, depending on the destination country and the type of service used. These services are expensive due to the cost of complying with Know Your Customer (KYC) and Anti-Money Laundering (AML) regulations, capital controls, or other restrictions. Additionally, there may be a lack of transparency in the exchange rates, adding another invisible cost to the consumer. What’s more, transferring money through intermediaries like banks takes time. An average international payment takes 2-3 days to clear.</p>
+          <p style="text-align:left" class="font5 size3" id="9"><u>How bitcoin can be used</u></p>
+          <p>Bitcoin has been suggested as an attractive medium for international remittances because of the borderless nature of cryptocurrency. Since anyone can use the blockchain, there's no need to send payments through a bank or remittance software provider (RSP).</p>
+          <p>Several blockchain startups offer services to facilitate bitcoin remittances without requiring the users to understand bitcoin technology. These services replace RSPs with software to facilitate bitcoin transactions. A Money Transfer Operator can simply estimate the amount of money needed for their daily operations, purchase the equivalent amount of bitcoins in advance, and immediately sell them for fiat currency in the receiving nation. The business does not hold the virtual currency tokens for a long period of time, and customers' transactions are performed within minutes. </p>
+          <p style="text-align:left" class="font5 size3" id="10"><u>Other cryptocurrencies to consider</u></p>
+          <p>Bitcoin has become less attractive for remittances due to the increasing cost of bitcoin transactions. Some competing cryptocurrencies, such as Ripple and Litecoin, are also targeting the remittance market with substantially lower fees.</p>
+          <p>The best cryptocurrencies to send abroad are those with high liquidity (so they can be easily converted back to fiat currency and used) and those with low gas fees (payments made by users to compensate for the computing energy required to process and validate crypto transactions). Note, though, that when compared to the high cost of sending remittances in the first place, almost all cryptocurrencies will have lower gas fees than the fees charged by Western Union, Wise, and other banks.</p>
+          <p>One of the best cryptocurrencies to use to send remittances abroad are stablecoins. These are pegged to fiat currencies so inflation isn’t an issue, and fiat-backed stablecoins are also supported by high liquidity. So, stablecoins such as BUSD, USDT, or USDC are all good options. </p>
+          <p style="text-align:left" class="font5 size3" id="11"><u>Using an exchange</u></p>
+          <p>Using a crypto exchange, such as <a class="btn-nav4" href="https://accounts.binance.com/en/register?ref=GKT9BQWJ" target="_blank" rel="noopener noreferrer">Binance</a>, allows you to be more in charge of your money send with crypto, because there's no third party service that will handle your transfer to arrive at its destination. The downside is, however, that if you want to send fiat currencies overseas, let's say EUR to BRL, both the sender as well as the receiver have to be the same person as varified in your account. </p>
+          <p>So how does it work? It's actually very simple, you still don't have to understand blockchain technology, but do need a bank account for both currencies that you wish to deposit and withdrawal. In this case, a bank account in EUR and a bank account in BRL in Brazil. Using the Binance exchange – or any other exchange that accepts deposits/withdrawals in the desired currencies – you can deposit money for free, or for a small fee depending the currency and deposit method. Next, you might want to convert your deposit into a stablecoin such as USDT, which is basically a digital Dollar. </p>
+          <p>But why convert it to Dolar if we want BRL? Because you can't directly convert one fiat currency into another, it has to go through cryptocurrencies. Next we want to convert our USDT into BRL and withdraw it to a Brazilian bank account. These sound like a lot of transactions, but they're instant, apart from the deposit and withdrawl which might take a few minutes to a day depending your chosen method.</p>
+        </div>
+        </div>
+      
+
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-11 col-lg-4 justify-content-center">
+
+
+        <!-- content Widget -->
+        <div class="sticky">
+        <div class="padding2-2">
+          <div class="display3 card my-4">
+            <h5 style="text-align:left" class="card-header font2">Content</h5>
+              <div class="card-body autocom-box">
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Traditional ways to send money to Brazil</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding4">› Bank transfer directly to the seller</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding5">› Power of attorney</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Alternative ways to send money to Brazil</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted padding4">› Western Union</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="text-muted padding4">› Wise (or comparable services)</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="text-muted padding5">› Open a bank account in Brazil</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="text-muted padding3">Sending money with crypto</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="text-muted padding4">› How bitcoin can be used</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#10"><h6 style="text-align:left" class="text-muted padding4">› Other cryptocurrencies to consider</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#11"><h6 style="text-align:left" class="text-muted minbreak2">› Using an exchange</h6></a>
+              </div>
+          </div>
+        </div>
+
+        <!-- legibility Widget -->
+        <div class="display3 legibility">
+          <tr>
+            <table class="row justify-content-center box2">
+              <td class="box box3" style="text-align:center" onclick="onClick()">
+                <div>
+                  <i class="fas fa-align-left line-icon"></i>
+                </div>
+                <div class="noselect">
+                  <h6>Line Hight <span id="result3"></span></h6>
+                  <div class="steps" id="steps3">
+                    <span id="step7">&#8213;</span>
+                    <span id="step8">&#8213;</span>
+                    <span id="step9">&#8213;</span>
+                  </div>
+                </div>
+              </td>
+              <td class="box" style="text-align:center" onclick="onClick2()">
+                <div>
+                  <i class="fas fa-text-height line-icon"></i>
+                </div>
+                <div class="noselect">
+                  <h6>Text Size <span id="result4"></span></h6>
+                  <div class="steps" id="steps4">
+                    <span id="step10">&#8213;</span>
+                    <span id="step11">&#8213;</span>
+                    <span id="step12">&#8213;</span>
+                  </div>
+                </div>
+              </td>
+            </table>   
+          </tr>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  </section>
+  
+        
+  
+  <!-- Call to Action -->
+  <section class="call-to-action text-center" id="join">
+    <!-- <div class="overlay"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 mx-auto">
+          <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-8 mb-2 mb-md-0">
+                <input type="email" class="form-control email-box custom2 font4" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-4">
+                <button type="submit" class="btn btn-block btn-show custom2 font4">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <!-- Footer -->
+  <footer class="footer bg-light">
+    <div class="col-lg-6 h-100 text-center my-auto display2">
+      <ul class="list-inline mb-2">
+        <li class="list-inline-item spacing">
+          <a class="color6 font4 spacing dark2" href="post6dark.html">Dark Mode <i class="fas fa-moon"></i></a>
+        </li>
+        <li class="list-inline-item spacing">
+          <a class="weight2 color6 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a class="weight2 color6 font4" href="about.html">About</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color6 font4" href="contact.html">Contact</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color6 font4" href="terms.html">Terms of Use</a>
+            </li>
+            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color6 font4" href="privacy.html">Privacy Policy</a>
+            </li> 
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
+        </div>
+  
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="weight2 color6 font4 dark" href="post6dark.html">Dark Mode <i class="fas fa-moon"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="weight2 color6 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
+
+<!-- Bootstrap core JS-->
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<!--<script src="mail/jqBootstrapValidation.js"></script>-->
+<!--<script src="mail/contact_me.js"></script>-->
+<!-- Core theme JS-->
+<!--<script src="js/scripts.js"></script>-->
+
+</body>
+
+</html>

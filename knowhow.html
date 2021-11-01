@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brazil Travel & Immigration</title> 
+
+  <!-- Custom Fonts --> 
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+ 
+
+   <!--Bootstrap core CSS -->
+  <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+ 
+  <!-- Custom fonts for this template -->
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+  <!-- font-family Paytone One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap" rel="stylesheet">
+
+<script>
+  //collapse nav-bar when clicked outside
+  window.onclick = function(event){
+      if(!event.target.matches('.navbar-toggler')){
+            $(".navbar-collapse").collapse("hide");
+      }
+  }
+
+
+
+  var clicks = 0;
+  var clicks2 = 0;
+
+  function onClick() {
+    clicks += 1;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+
+    if (clicks == "0")
+    {
+      document.getElementById("steps").style.display = "none"
+      document.getElementById("steps3").style.display = "none"
+      document.getElementById("result").innerHTML = ""
+      document.getElementById("result3").innerHTML = ""
+
+      if (clicks == "0" && clicks2 == "0")
+      {
+        height.style.lineHeight = ""    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "0" && clicks2 == "1")
+      {
+        height.style.lineHeight = "1.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "0" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "0" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "1")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "#2e57c7"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "#2e57c7"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.5x)"
+      document.getElementById("result3").innerHTML = "(1.5x)"
+
+      if (clicks == "1" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2rem"    
+        size.fontSize = "1rem"
+      }
+      if (clicks == "1" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "1" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "1" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "2")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "#2e57c7"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "#2e57c7"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.75x)"
+      document.getElementById("result3").innerHTML = "(1.75x)"
+
+      if (clicks == "2" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2.5rem"    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "2" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "2" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "2" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "3")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "#2e57c7"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "#2e57c7"
+      document.getElementById("result").innerHTML = "(2x)"
+      document.getElementById("result3").innerHTML = "(2x)"
+
+      if (clicks == "3" && clicks2 == "0")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1rem"    
+      }
+      if (clicks == "3" && clicks2 == "1")
+      {
+        height.style.lineHeight = "3.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "3" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "3" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+      
+      clicks -= 4;
+    }
+  };
+
+
+
+  function onClick2() {
+    clicks2 += 1;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+    var size2 = document.getElementsByClassName("size2");
+
+    if (clicks2 == "0")
+    {
+      document.getElementById("steps2").style.display = "none"
+      document.getElementById("steps4").style.display = "none"
+      document.getElementById("result2").innerHTML = ""
+      document.getElementById("result4").innerHTML = ""
+      size.style.fontSize = "1rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.5rem"}
+      // size2[i].style.marginTop = "1rem"}
+
+      if (clicks2 == "0" && clicks == "0")
+      {
+        height.style.lineHeight = ""
+      }
+      if (clicks2 == "0" && clicks == "1")
+      {
+        height.style.lineHeight = "2rem"
+      }
+      if (clicks2 == "0" && clicks == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+      }
+      if (clicks2 == "0" && clicks == "-1")
+      {
+        height.style.lineHeight = "3rem"
+      }
+    }
+
+    if (clicks2 == "1")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "#2e57c7"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "#2e57c7"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(m)"
+      document.getElementById("result4").innerHTML = "(m)"
+      size.style.fontSize = "1.2rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.6rem"}
+      // size2[i].style.marginTop = "1.5rem"}
+
+      if (clicks2 == "1" && clicks == "0")
+      {
+        height.style.lineHeight = "1.7rem" 
+      }
+      if (clicks2 == "1" && clicks == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+      }
+      if (clicks2 == "1" && clicks == "2")
+      {
+        height.style.lineHeight = "2.7rem"
+      }
+      if (clicks2 == "1" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.2rem"
+      }
+    }
+
+    if (clicks2 == "2")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "#2e57c7"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "#2e57c7"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(l)"
+      document.getElementById("result4").innerHTML = "(l)"
+      size.style.fontSize = "1.5rem"  
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.8rem"}
+      // size2[i].style.marginTop = "2rem"}
+
+      if (clicks2 == "2" && clicks == "0")
+      {
+        height.style.lineHeight = "2rem"   
+      }
+      if (clicks2 == "2" && clicks == "1")
+      {
+        height.style.lineHeight = "2.5rem"   
+      }
+      if (clicks2 == "2" && clicks == "2")
+      {
+        height.style.lineHeight = "3rem"   
+      }
+      if (clicks2 == "2" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.5rem"   
+      }
+    }
+
+    if (clicks2 == "3")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "#2e57c7"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "#2e57c7"
+      document.getElementById("result2").innerHTML = "(xl)"
+      document.getElementById("result4").innerHTML = "(xl)"
+      size.style.fontSize = "1.8rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "2rem"}
+      // size2[i].style.marginTop = "2.5rem"}
+
+      if (clicks2 == "3" && clicks == "0")
+      {
+        height.style.lineHeight = "2.3rem" 
+      }
+      if (clicks2 == "3" && clicks == "1")
+      {
+        height.style.lineHeight = "2.8rem" 
+      }
+      if (clicks2 == "3" && clicks == "2")
+      {
+        height.style.lineHeight = "3.3rem"
+      }
+      if (clicks2 == "3" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.8rem"   
+      }
+      
+      clicks2 -= 4; 
+    } 
+  };
+
+</script>
+
+
+<style>
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.padding{
+  padding-bottom: 20px;
+}
+
+.img-fluid{
+  border-radius: 3px;
+}
+
+.color6{
+  color: #2089ac;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.custom{
+  text-shadow: black 0px 0px 10px;
+}
+
+.custom2{
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.8);
+}
+
+.size h3{font-size:1.1rem;} .size h4{font-size:2.1rem;} .size h5{font-size:1.1rem;}
+@media (min-width:768px){.size h3{font-size:1.2rem;} .size h4{font-size:2.5rem;} .size h5{font-size:1.3rem;}}
+@media (min-width:1700px){.size{margin-top: 2rem;}}
+
+.font1{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.font2{ 
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.btn {
+  text-align: center;
+  color: #1d809f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  width: 100%;
+  background-color: var(--lgt-blue);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--lgt-blue);
+  border-color: var(--lgt-blue);
+}
+
+.overlap2 {
+  position:relative;
+}
+
+.break{
+  position:relative;
+  z-index:1;
+}
+
+.minbreak{
+  margin-bottom: -1px;
+}
+
+.text{
+  color:#148F77;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom:5px;
+}
+
+.floatb{
+  margin-left: 15px;
+  margin-top: 35px;
+  max-width: 65px;
+  font-size:1.5rem;
+}
+@media (min-width:1700px){
+  .floatb{
+    margin-top: 44px;
+}}
+
+.card-body{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.display2{
+  display:none;
+}
+@media (max-width:992px){.display2{display:block;}}
+
+@media (max-width:992px){.display3{display:none;}}
+
+.font3{
+  font-family: 'Paytone One', sans-serif;
+}
+
+.font4{
+  font-family: 'Raleway', sans-serif;
+}
+
+.font5{
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.font6{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.section-heading{
+  margin-bottom: 1rem;
+}
+
+.padding2{
+  margin-top:-1.3rem;
+}
+
+.padding3{
+  padding-bottom: 5px;
+}
+
+.padding4{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.padding5{
+  font-size: 15px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.autocom-box{
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.btn-nav4{
+  color:#22b294!important;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #22b29500!important;
+} 
+.btn-nav4:hover{
+  background-color:#22b294!important;
+  color: white!important;
+  border: 1px solid #22b294!important;
+  border-radius: 5px;
+}
+
+.border2{
+  border-left: 1px solid #6c747d;
+  margin-right: 5px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+.legibility{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.legibility2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.box{
+  background-color: white;
+  width: 280px;
+  border-radius: 3px;
+}
+.box:hover{background-color: #f7f7f7;  cursor: pointer;}
+
+.box2{
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.box3{
+  border-right: 1px solid #e0e0e0;
+}
+
+.steps{
+  margin-top: -0.6rem;
+  margin-bottom: -0.3rem;
+  display: none;
+  opacity: 0.8;
+}
+
+.line-icon{
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  opacity: 0.8;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.space{
+  margin-bottom: 1.5rem;
+}
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <br><br>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img2/logos/logoikigai.png" alt=""/></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item upper">
+            <a class="nav-link btn-nav" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="travel.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav2" href="immigration.html">Immigration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.skyscanner.com.br/?currency=EUR&previousCultureSource=COOKIE&redirectedFrom=www.skyscanner.com" target="_blank" rel="noopener noreferrer">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav3 js-scroll-trigger" href="#join">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+  <a class="btn btn-show3 btn-sm floatb" href="immigration.html">&#8592;</a>
+
+  <section class="page-section break" id="portfolio">
+    <br>
+    <div class="size text-center">
+        <div>
+          <h4 class="section-heading color6 font3">Knowhow.</h4>
+          <h3 class="lead mb-0 text-muted">Steps to become a Brazilian resident<p class="text-muted font6">Published on 20/08/2021 <c class="border2"></c>Updated on 22/08/2021</p></h3>
+        </div>
+    </div>
+  </section>
+
+
+  <header class="masthead16">
+
+
+  <br>
+  <section class="page-section overlap2" id="portfolio">
+  <br><br><br>
+   
+  <div class="display2 container">
+    <div class="row justify-content-center">
+        
+        <div class="col-11 col-lg-4">
+                
+        <!--content widget-->
+        <div class="padding2">
+          <div class="card my-4">
+            <h5 style="text-align:left" class="card-header font2">Content</h5>
+              <div class="card-body autocom-box">
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Residency and visa, what's the difference?</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Start from home or in Brazil?</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">Don't leave the country during the process</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Pick a state and stick with it</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted minbreak">Which came first, the chicken or the egg?</h6></a>
+            </div>
+            </div>
+          </div>
+
+          <!--legibility widget-->
+          <div class="legibility2">
+            <tr>
+              <table class="row justify-content-center box2">
+                <td class="box box3" style="text-align:center" onclick="onClick()">
+                      <div>
+                        <i class="fas fa-align-left line-icon"></i>
+                      </div>
+                      <div class="noselect">
+                        <h6 class="noselect">Line Hight <span id="result"></span></h6>
+                        <div class="steps" id="steps">
+                          <span id="step1">&#8213;</span>
+                          <span id="step2">&#8213;</span>
+                          <span id="step3">&#8213;</span>
+                        </div>
+                      </div>
+                </td>
+                <td class="box" style="text-align:center" onclick="onClick2()">
+                      <div>
+                        <i class="fas fa-text-height line-icon"></i>
+                      </div>
+                      <div class="noselect">
+                        <h6>Text Size <span id="result2"></span></h6>
+                        <div class="steps" id="steps2">
+                          <span id="step4">&#8213;</span>
+                          <span id="step5">&#8213;</span>
+                          <span id="step6">&#8213;</span>
+                        </div>
+                      </div>
+                </td>
+              </table>   
+            </tr>
+          </div>
+        </div>
+    </div>
+    <br>
+  </div>
+
+  <!--tips content-->
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-8" id="height">
+            <div id="size">
+              <div>
+                <p style="text-align:left" class="font1 size2" id="1">Residency and visa, what's the difference?</p>
+                <hr>
+                <p style="text-align:left">A visa is a registration made in the passport of a citizen who is expected to enter another territory. Visas are granted at embassies or consulates referring to the country you wish to migrate. This record attests the applicant's entry authorization to the destination country. For example: if you are a native of Japan and want to travel to Brazil, you should look for the Brazilian embassy or consulate in Japan.</p>
+                <p style="text-align:left">A residence permit is an authorization to reside in Brazil for more than 90 days and have access to rights such as working, studying, investing and accessing health services. Residency can be temporary (between 1 to 2 years) or for an indefinite period (important in cases of Brazilian naturalization – <a class="btn-nav4" href="post7.html" target="_blank" rel="noopener noreferrer">learn more here</a>).</p>
+                <p style="text-align:left">Perhaps one of the most significant differences between the two is that it's not necessary for an immigrant to return to their country of origin in order to apply for a residence permit in Brazil, whereas a visa has to be requested from your home country.</p>
+                <p style="text-align:left">For example, imagine that you work for a company that will transfer you to a branch in Brazil. In this case, the most suitable visa is the Work Visa.</p>
+                <p style="text-align:left"><u>In the country of origin:</u></p>
+                <p style="text-align:left">– Go to the Brazilian consulate or embassy and apply for a Work Visa in Brazil. Considering the documentation gathered, the visa is stamped in your passport</p>
+                <p style="text-align:left"><u>In Brazil:</u></p>
+                <p style="text-align:left">– At the airport in the country of origin, you use this stamp (visa) that certifies your authorization to enter Brazilian territory.</p>
+                <p style="text-align:left">– Upon entering Brazil, you have 90 days to go to the Federal Police with your passport and request a residence permit through your visa, personal data, fingerprint, etc.</p>
+                <p style="text-align:left" class="space">– If the residence permit is granted, you will receive a card called the National Migration Registry Card (CRNM) which contains an identification code: the National Migratory Registry (RNM, formerly RNE).</p>
+
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="2">Start from home or in Brazil?</p>
+                <hr>
+                <p style="text-align:left">As we know now, it's no so much a choice but rather it will depend on your nationality and personal situation. While tourists from certain countries, such as many other South American and European Union countries, may enter Brazil for a maximum of 90 days without a visa; many other short-term visitors must apply for a visa beforehand. This means that they will have to start planning from their home country and visit the Brazilian embassy or consulate.</p>
+                <p style="text-align:left">For nationals who do have the option to enter Brazil for 90 days without requesting a visa, several questions need answered in order to determine where to start. If your strategy is to go out on a limb, chances are slim that you will succeed in having the right documentation after 90 days.</p>
+                <p style="text-align:left">Fist of all, determine the grounds on which you may be eligible to receive residency. Are you really looking to move and live in Brazil indefinitely or are you interested in a year of studies or internship. Maybe the company you work for has requested you to relocate, you are determined to live with your Brazilian partner, or dreaming of retiring on a tropical beach. </p>
+                <p style="text-align:left"><u>Reasons to start from home:</u></p>
+                <p style="text-align:left">You know exactly what kind of visa/residence permit you need and the Brazilian consulate or embassy facilitates your application; you're unsure about what documents you need to present and don't want to take the risk of flying out and having to come back; you don't speak Portugues well enough yet in order to visit the autorities in Brazil in person; you don't have a place to stay or the time to risk having to leave Brazil after 90 days when your application has not (yet) been approved. Keep in mind that the fine for overstaying is R$100 per day.</p>
+                <p style="text-align:left"><u>Reasons to go to Brazil first:</u></p>
+                <p style="text-align:left">You don't want to await your application process from your home country; you know exactly what documents to bring along with the right apostille certificates; you have a spouse, family or someone helping you in Brazil with your application; applying in person and visiting the right organizations directly may give you faster results; you're from a country that is allowed to extend their 90 day tourist visa, giving you more time to await your application process.</p>
+                <p style="text-align:left" class="space"><a class="btn-nav4" href="post8.html" target="_blank" rel="noopener noreferrer">Find out which nationalities can extend their 90-day tourist visa</a></p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="3">Don't leave the country during the process</p>
+                <hr>
+                <p style="text-align:left">If you chose to apply for residency from within Brazil and awaiting your process, it's best to stay in the country and just be patient. The authorities may call you in at any time in order to receive more documents or conduct an interview. If you're missing documents from your home country, it's best to receive them per mail order or have someone bring them to you. If you go look for them in person, you might risk not being able to return in time for your appointment, getting fined by airport officials (in the case you have overstayed) or not being able to enter the country again on your way back.  </p>
+                <p style="text-align:left" class="space">When you receive a protocol from the Federal Police regarding your residency application, it may give you the right to stay in Brazil to await the result of your application (with an official protocol), even if that takes longer than 90 days. However, when you leave the country you might loose that right and with it your application's progress. Be aware that while your protocol or application documents might give you certain rights in the issuing state, other states might not share the same legislation and don't give you the same rights.</p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="4">Pick a state and stick with it</p>
+                <hr>
+                <p style="text-align:left">Going deeper into the interstate differences, we should recognize that Brazil has the size of a continent. By themselves, Brazil's states are larger than some major countries. France and Spain, for example, two of the largest countries in Europe, are roughly the size of neighboring states Bahia and Minas Gerais. This means that apart from every state having their differences in things such as food, culture and language, they also have their own rules and legislation.</p> 
+                <p style="text-align:left">Going back to the previous example where a received official document might give you certain rights in one state, doesn't mean that it will give you the same rights in any of the other states. So it might very well happen that a government official in a certain state reassures a foreigner he can cross the border, for whatever reason, while having overstayed his visa and awaiting residency authorization, while in a neighboring state this is not accepted, upon which the foreigner will be fined and denied entry to the country for three months. </p>
+                <p style="text-align:left">Deciding where to start your adventure in Brazil is as complex as deciding whether you want to move to Brazil in the first place. Of course, if you’re moving because you’ve already landed a job, enrolled in a specific study program, or fallen in love with a Brazilian, the decision of where to live will already have been made for you. However, in many other cases – if you’re looking to start a business, immerse yourself in a particular culture or lead a certain type of lifestyle – you’ll have the freedom of choosing which city or region offers the most opportunities and best corresponds to your needs and desires.</p>
+                <p style="text-align:left" class="space"><a class="btn-nav4" href="post9.html" target="_blank" rel="noopener noreferrer">Find out where to live in Brazil</a></p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="5">Which came first, the chicken or the egg?</p>
+                <hr>
+                <p style="text-align:left">You might ask yourself where to start first, and while in some cases there is a logical starting point, sometimes there's not. For investors, for example, it can be frustrating to find out the logical order of getting things done – you may want to open a bank account to facilitate your investment, but in order to open one you need a residence permit (RNM), but to receive a RNM you need to get residency approved, but to get it approved you need to invest first (in the case of those looking for a residence permit based on investment), but to invest you probably want to open a bank account. </p>
+                <p style="text-align:left">On the other hand, when residency is sought after on the basis of an employment contract, university study or marriage, to name a few, the steps are more obvious and can be followed from a checklist.</p>
+                <p style="text-align:left">In any case, a good starting point would be to <a class="btn-nav4" href="post.html" target="_blank" rel="noopener noreferrer">apply for a CPF number</a>, which you will need for literally everything. With your CPF you can go get a SIM card in order to communicate through a Brazilian phone number, and arrange a place to stay in order to provide proof of address.</p>
+                <p style="text-align:left">For those investors who find themselves stuck, a solution might be to contract a company specialized in foreign investments (more applicable to those wanting to invest in an existing or new business). Or investment could arrive through a friend's or familiy member's bank account in Brazil, but keep in mind that international money transfers to Brazil cannot be done to any person. Through Wise, for example, it's only possible to make (big) transfers to a family member, an account in your name, or directly to a home owner in the purchase of real estate. Another option would be an international transfer through your home bank (this can be bureaucratic however and very expensive), or through crypto (sounds complicated? After reading <a class="btn-nav4" href="post6.html" target="_blank" rel="noopener noreferrer">how to send money to Brazil</a>, you'll see it's actually not that difficult). </p>
+              </div>
+            </div>
+  
+          </div>
+          <div class="col-11 col-lg-4">
+                  
+          <!--content widget-->
+          <div class="sticky">
+          <div class="padding2">
+            <div class="display3 card my-4">
+              <h5 style="text-align:left" class="card-header font2">Content</h5>
+                <div class="card-body">
+                  <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Residency and visa, what's the difference?</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Start from home or in Brazil?</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">Don't leave the country during the process</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Pick a state and stick with it</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted minbreak">Which came first, the chicken or the egg?</h6></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- legibility Widget -->
+            <div class="display3 legibility">
+              <tr>
+                <table class="row justify-content-center box2">
+                  <td class="box box3" style="text-align:center" onclick="onClick()">
+                    <div>
+                      <i class="fas fa-align-left line-icon"></i>
+                    </div>
+                    <div class="noselect">
+                      <h6>Line Hight <span id="result3"></span></h6>
+                      <div class="steps" id="steps3">
+                        <span id="step7">&#8213;</span>
+                        <span id="step8">&#8213;</span>
+                        <span id="step9">&#8213;</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="box" style="text-align:center" onclick="onClick2()">
+                    <div>
+                      <i class="fas fa-text-height line-icon"></i>
+                    </div>
+                    <div class="noselect">
+                      <h6>Text Size <span id="result4"></span></h6>
+                      <div class="steps" id="steps4">
+                        <span id="step10">&#8213;</span>
+                        <span id="step11">&#8213;</span>
+                        <span id="step12">&#8213;</span>
+                      </div>
+                    </div>
+                  </td>
+                </table>   
+              </tr>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<!-- Call to Action -->
+<section class="call-to-action text-center" id="join">
+  <!-- <div class="overlay"></div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 mx-auto">
+        <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-8 mb-2 mb-md-0">
+              <input type="email" class="form-control email-box custom2 font4" placeholder="Enter your email...">
+            </div>
+            <div class="col-12 col-md-4">
+              <button type="submit" class="btn btn-block btn-show custom2 font4">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer bg-light">
+  <div class="col-lg-6 h-100 text-center my-auto display2">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item spacing">
+        <a class="color6 font4 spacing dark2" href="knowhowdark.html">Dark Mode <i class="fas fa-moon"></i></a>
+      </li>
+      <li class="list-inline-item spacing">
+        <a class="weight2 color6 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2"> 
+        <ul class="list-inline mb-2">
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="about.html">About</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="contact.html">Contact</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="terms.html">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="privacy.html">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
+      </div>
+
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4 dark" href="knowhowdark.html">Dark Mode <i class="fas fa-moon"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- Bootstrap core JS-->
+  <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+  <!--<script src="mail/jqBootstrapValidation.js"></script>-->
+  <!--<script src="mail/contact_me.js"></script>-->
+  <!-- Core theme JS-->
+  <!--<script src="js/scripts.js"></script>-->
+
+</body>
+
+</html>

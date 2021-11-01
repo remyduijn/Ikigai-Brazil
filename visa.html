@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brazil Travel & Immigration</title>
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet"> 
+
+
+   <!--Bootstrap core CSS -->
+  <!--<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+ 
+  <!-- font-family Paytone One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap" rel="stylesheet">
+
+<script>
+  //collapse nav-bar when clicked outside
+  window.onclick = function(event){
+      if(!event.target.matches('.navbar-toggler')){
+            $(".navbar-collapse").collapse("hide");
+      }
+  } 
+
+
+
+  var clicks = 0;
+  var clicks2 = 0;
+
+  function onClick() {
+    clicks += 1;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+
+    if (clicks == "0")
+    {
+      document.getElementById("steps").style.display = "none"
+      document.getElementById("steps3").style.display = "none"
+      document.getElementById("result").innerHTML = ""
+      document.getElementById("result3").innerHTML = ""
+
+      if (clicks == "0" && clicks2 == "0")
+      {
+        height.style.lineHeight = ""    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "0" && clicks2 == "1")
+      {
+        height.style.lineHeight = "1.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "0" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "0" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "1")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "#2e57c7"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "#2e57c7"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.5x)"
+      document.getElementById("result3").innerHTML = "(1.5x)"
+
+      if (clicks == "1" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2rem"    
+        size.fontSize = "1rem"
+      }
+      if (clicks == "1" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "1" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "1" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "2")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "#2e57c7"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "#2e57c7"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.75x)"
+      document.getElementById("result3").innerHTML = "(1.75x)"
+
+      if (clicks == "2" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2.5rem"    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "2" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "2" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "2" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "3")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "#2e57c7"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "#2e57c7"
+      document.getElementById("result").innerHTML = "(2x)"
+      document.getElementById("result3").innerHTML = "(2x)"
+
+      if (clicks == "3" && clicks2 == "0")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1rem"    
+      }
+      if (clicks == "3" && clicks2 == "1")
+      {
+        height.style.lineHeight = "3.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "3" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "3" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+      
+      clicks -= 4;
+    }
+  };
+
+
+
+  function onClick2() {
+    clicks2 += 1;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+    var size2 = document.getElementsByClassName("size2");
+    var size3 = document.getElementsByClassName("size3");
+
+    if (clicks2 == "0")
+    {
+      document.getElementById("steps2").style.display = "none"
+      document.getElementById("steps4").style.display = "none"
+      document.getElementById("result2").innerHTML = ""
+      document.getElementById("result4").innerHTML = ""
+      size.style.fontSize = "1rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.5rem"}
+      size3[0].style.fontSize = "1.2rem"
+      size3[1].style.fontSize = "1.2rem"
+      size3[2].style.fontSize = "1.2rem"
+
+      if (clicks2 == "0" && clicks == "0")
+      {
+        height.style.lineHeight = ""
+      }
+      if (clicks2 == "0" && clicks == "1")
+      {
+        height.style.lineHeight = "2rem"
+      }
+      if (clicks2 == "0" && clicks == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+      }
+      if (clicks2 == "0" && clicks == "-1")
+      {
+        height.style.lineHeight = "3rem"
+      }
+    }
+
+    if (clicks2 == "1")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "#2e57c7"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "#2e57c7"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(m)"
+      document.getElementById("result4").innerHTML = "(m)"
+      size.style.fontSize = "1.2rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.6rem"}
+      size3[0].style.fontSize = "1.4rem"
+      size3[1].style.fontSize = "1.4rem"
+      size3[2].style.fontSize = "1.4rem"
+
+      if (clicks2 == "1" && clicks == "0")
+      {
+        height.style.lineHeight = "1.7rem" 
+      }
+      if (clicks2 == "1" && clicks == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+      }
+      if (clicks2 == "1" && clicks == "2")
+      {
+        height.style.lineHeight = "2.7rem"
+      }
+      if (clicks2 == "1" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.2rem"
+      }
+    }
+
+    if (clicks2 == "2")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "#2e57c7"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "#2e57c7"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(l)"
+      document.getElementById("result4").innerHTML = "(l)"
+      size.style.fontSize = "1.5rem"  
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.8rem"}
+      size3[0].style.fontSize = "1.6rem"
+      size3[1].style.fontSize = "1.6rem"
+      size3[2].style.fontSize = "1.6rem"
+
+      if (clicks2 == "2" && clicks == "0")
+      {
+        height.style.lineHeight = "2rem"   
+      }
+      if (clicks2 == "2" && clicks == "1")
+      {
+        height.style.lineHeight = "2.5rem"   
+      }
+      if (clicks2 == "2" && clicks == "2")
+      {
+        height.style.lineHeight = "3rem"   
+      }
+      if (clicks2 == "2" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.5rem"   
+      }
+    }
+
+    if (clicks2 == "3")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "#2e57c7"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "#2e57c7"
+      document.getElementById("result2").innerHTML = "(xl)"
+      document.getElementById("result4").innerHTML = "(xl)"
+      size.style.fontSize = "1.8rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "2rem"}
+      size3[0].style.fontSize = "1.8rem"
+      size3[1].style.fontSize = "1.8rem"
+      size3[2].style.fontSize = "1.8rem"
+
+      if (clicks2 == "3" && clicks == "0")
+      {
+        height.style.lineHeight = "2.3rem" 
+      }
+      if (clicks2 == "3" && clicks == "1")
+      {
+        height.style.lineHeight = "2.8rem" 
+      }
+      if (clicks2 == "3" && clicks == "2")
+      {
+        height.style.lineHeight = "3.3rem"
+      }
+      if (clicks2 == "3" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.8rem"   
+      }
+      
+      clicks2 -= 4; 
+    } 
+  };
+
+</script>
+
+
+<style>
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.padding{
+  padding-bottom: 20px;
+}
+
+.img-fluid{
+  border-radius: 3px;
+}
+
+.color6{
+  color: #2089ac;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.custom{
+  text-shadow: black 0px 0px 10px;
+}
+
+.custom2{
+  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.8);
+}
+
+.size h3{font-size:1.1rem;} .size h4{font-size:2.1rem;} .size h5{font-size:1.1rem;}
+@media (min-width:768px){.size h3{font-size:1.2rem;} .size h4{font-size:2.5rem;} .size h5{font-size:1.3rem;}}
+@media (min-width:1700px){.size{margin-top: 2rem;}}
+
+.font1{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.font2{
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.btn {
+  text-align: center;
+  color: #1d809f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  width: 100%;
+  background-color: var(--lgt-blue);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--lgt-blue);
+  border-color: var(--lgt-blue);
+}
+
+.overlap2 {
+  position:relative;
+}
+
+.break{
+  position:relative;
+  z-index:1;
+}
+
+.minbreak{
+  margin-bottom: -1px;
+}
+
+.text{
+  color:#148F77;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom:5px;
+}
+
+.floatb{
+  margin-left: 15px;
+  margin-top: 35px;
+  max-width: 65px;
+  font-size:1.5rem;
+}
+@media (min-width:1700px){
+  .floatb{
+    margin-top: 44px;
+}}
+
+.card-body{
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+}
+
+.display2{
+  display:none;
+}
+@media (max-width:992px){.display2{display:block;}}
+
+@media (max-width:992px){.display3{display:none;}}
+
+.font3{
+  font-family: 'Paytone One', sans-serif;
+}
+
+.font4{
+  font-family: 'Raleway', sans-serif;
+}
+
+.font5{
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.font6{
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.section-heading{
+  margin-bottom: 1rem;
+}
+
+.padding2{
+  margin-top:-1.3rem;
+}
+
+.padding3{
+  padding-bottom: 5px;
+}
+
+.padding4{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.padding5{
+  font-size: 15px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.padding6{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.autocom-box{
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.btn-nav4{
+  color:#22b294!important;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #22b29500!important;
+} 
+.btn-nav4:hover{
+  background-color:#22b294!important;
+  color: white!important;
+  border: 1px solid #22b294!important;
+  border-radius: 5px;
+}
+
+.border2{
+  border-left: 1px solid #6c747d;
+  margin-right: 5px;
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+.legibility{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.legibility2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.box{
+  background-color: white;
+  width: 280px;
+  border-radius: 3px;
+}
+.box:hover{background-color: #f7f7f7;  cursor: pointer;}
+
+.box2{
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.box3{
+  border-right: 1px solid #e0e0e0;
+}
+
+.steps{
+  margin-top: -0.6rem;
+  margin-bottom: -0.3rem;
+  display: none;
+  opacity: 0.8;
+}
+
+.line-icon{
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  opacity: 0.8;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.space{
+  margin-bottom: 1.5rem;
+}
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <br><br>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img2/logos/logoikigai.png" alt=""/></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item upper">
+            <a class="nav-link btn-nav" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="travel.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav2" href="immigration.html">Immigration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="articles.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.skyscanner.com.br/?currency=EUR&previousCultureSource=COOKIE&redirectedFrom=www.skyscanner.com" target="_blank" rel="noopener noreferrer">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav3 js-scroll-trigger" href="#join">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+
+  <a class="btn btn-show3 btn-sm floatb" href="immigration.html">&#8592;</a>
+
+  <section class="page-section break" id="portfolio">
+    <br>
+    <div class="size text-center">
+        <div>
+          <h4 class="section-heading color6 font3">Visa.</h4>
+          <h3 class="lead mb-0 text-muted padding6">Information on visas for foreigners traveling to Brazil<p class="text-muted font6">Published on 14/06/2021 <c class="border2"></c> Updated on 22/06/2021</p></h3>
+        </div>
+    </div>
+  </section>
+
+
+  <header class="masthead14">
+
+
+  <br>
+  <section class="page-section overlap2" id="portfolio">
+  <br><br><br>
+  
+  <div class="display2 container">
+    <div class="row justify-content-center">
+        
+        <div class="col-11 col-lg-4">
+                
+        <!--content widget-->
+        <div class="padding2">
+          <div class="card my-4">
+            <h5 style="text-align:left" class="card-header font2">Content</h5>
+              <div class="card-body autocom-box">
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Do you need a visa?</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Where to apply for a visa?</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">Visit visa</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Other types of visa</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted padding4">a) Diplomatic Visa</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="text-muted padding4">b) Courtesy Visa</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="text-muted padding5">c) Temporary Visa</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="text-muted padding3">Mercosur citizens</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="text-muted minbreak">Legal framework</h6></a>
+              </div>
+          </div>
+        </div>
+
+        <!--legibility widget-->
+        <div class="legibility2">
+          <tr>
+            <table class="row justify-content-center box2">
+              <td class="box box3" style="text-align:center" onclick="onClick()">
+                    <div>
+                      <i class="fas fa-align-left line-icon"></i>
+                    </div>
+                    <div class="noselect">
+                      <h6 class="noselect">Line Hight <span id="result"></span></h6>
+                      <div class="steps" id="steps">
+                        <span id="step1">&#8213;</span>
+                        <span id="step2">&#8213;</span>
+                        <span id="step3">&#8213;</span>
+                      </div>
+                    </div>
+              </td>
+              <td class="box" style="text-align:center" onclick="onClick2()">
+                    <div>
+                      <i class="fas fa-text-height line-icon"></i>
+                    </div>
+                    <div class="noselect">
+                      <h6>Text Size <span id="result2"></span></h6>
+                      <div class="steps" id="steps2">
+                        <span id="step4">&#8213;</span>
+                        <span id="step5">&#8213;</span>
+                        <span id="step6">&#8213;</span>
+                      </div>
+                    </div>
+              </td>
+            </table>   
+          </tr>
+        </div>
+        </div>
+    </div>
+    <br>
+  </div>
+
+  <!--tips content-->
+  <div class="container">
+      <div class="row">
+              
+          <div class="col-lg-8" id="height">
+            <div id="size">
+              <div>
+                <p style="text-align:left" class="font1 size2" id="1">Do you need a visa?</p>
+                <hr>
+                <p style="text-align:left">Brazil adopts a visa granting policy based on the principle of reciprocity. This means that nationals from countries that require visas from Brazilian citizens to enter their territories will also need a visa to travel to Brazil. Under the current Brazilian immigration legislation (Law 13,445/2017), visa exemption can only be granted by the Brazilian authorities, on a reciprocal basis, through a bilateral understanding on the matter, except for the hypotheses of Decree 9,731/2019. Brazil has bilateral agreements on visa exemption with around 90 countries.</p>
+                <p style="text-align:left" class="space">To find out if you need a visa to travel to Brazil, <a class="btn-nav4" href="visas-brazil.pdf" download="visas-brazil" target="_blank" rel="noopener noreferrer">click here</a></p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="2">Where to apply for a visa?</p>
+                <hr>
+                <p style="text-align:left">Itamaraty is the Brazilian government agency responsible for granting visas, which occurs through the Embassies, Consulates General, Consulates and Vice-Consulates of Brazil abroad.</p>
+                <p style="text-align:left">Brazilian visas will generally not be granted in the national territory. Therefore, it will not be possible to obtain your visa at airports, ports or any entry point on the Brazilian border. Likewise, Itamaraty and the Federal Police (the body responsible for immigration control at Brazilian borders) will not be able to authorize the entry of foreign citizens without the proper visa.</p>
+                <p style="text-align:left">If the citizen of another country is already in the national territory and wishes to extend the period of stay or obtain a residence permit, he/she should contact the Ministry of Justice/Federal Police or the Ministry of Labor, if the authorization is, for example, for purposes of work or research.</p>
+                <p style="text-align:left" class="space"><a class="btn-nav4" href="https://www.gov.br/pt-br/servicos/obter-visto-para-viajar-ao-brasil" target="_blank" rel="noopener noreferrer">Click here to apply for a Brazilian visa</a></p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="3">Visit Visa</p>
+                <hr>
+                <p style="text-align:left" class="space">The visiting visa (or tourist visa) will be granted to a national of another country who travels to Brazil for stays of up to ninety days, without any immigration purpose or paid activity (daily allowances, artistic paychecks, compensation, or others travel expenses are allowed). The visiting visa may be granted for those traveling for tourism, business, transit, artistic or sporting activities, study, volunteer work, or for participation in conferences, seminars, congresses or meetings, among other activities, – provided that no remuneration is received in Brazil and the stay does not exceed ninety days.</p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="4">Other types of visas</p>
+                <hr>
+                <p style="text-align:left">Visas are classified according to the nature of the foreigner's trip and stay in Brazil, and not according to the passport presented. Carefully read the information below to find the most suitable visa for you and request in the "Apply for a Brazilian visa" section the type of visa compatible with the purpose of your trip: (Keep in mind that foreigners without the appropriate visa will be denied entry into Brazil)</p>
+                <p style="text-align:left" class="font5 size3" id="5"><u>Diplomatic Visa</u></p>
+                <p style="text-align:left">Granted to foreign authorities and employees who have diplomatic status and travel to Brazil on an official mission, either on temporary or permanent basis, representing foreign Governments or International Organizations recognized by Brazil.</p>
+                <p style="text-align:left" class="font5 size3" id="6"><u>Courtesy Visa</u></p>
+                <p style="text-align:left">Granted to personalities and foreign authorities in an unofficial trip to Brazil; spouse or partner, regardless of their gender, dependents and other family members who do not benefit from Diplomatic or Official Visa for family reunion; domestic workers of foreign Mission based in Brazil or of the Ministry of Foreign Affairs; foreign artists and sportsmen traveling to Brazil for free and eminently cultural events.</p>
+                <p style="text-align:left" class="font5 size3" id="7"><u>Temporary Visa</u></p>
+                <p style="text-align:left">Granted to foreigners in the following situations:</p>
+
+                <p>I – Temporary Visa I: research, teaching or academic extension;</p>
+                  
+                <p>II – Temporary Visa II: health care visa;</p>
+                  
+                <p>III – Temporary Visa III: humanitarian visa;</p>
+                  
+                <p>IV – Temporary Visa IV: student visa;</p>
+                  
+                <p>V – Temporary Visa V: <a class="btn-nav4" href="post3.html" target="_blank" rel="noopener noreferrer">paid work visa</a>;</p>
+                  
+                <p>VI – Temporary Visa VI: working-holiday visa: for those who travel primarily for purposes of tourism, with the possibility of undertaking paid employment. Visa granted on the basis of bilateral agreements. There are currently agreements with New Zealand, France and Germany;</p>
+                  
+                <p>VII – Temporary Visa VII: as a minister of a religious confession or as a member of an institute of consecrated life and of a congregation or religious order;</p>
+                
+                <p>VIII – Temporary Visa VIII – voluntary work visa;</p>
+                
+                <p>IX – Temporary Visa IX – <a class="btn-nav4" href="post4.html" target="_blank" rel="noopener noreferrer">investor visa</a>;</p>
+                  
+                <p>X – Temporary Visa X – visa for activities of economic, scientific, technological or cultural relevance;</p>
+                  
+                <p>XI – Temporary Visa XI – <a class="btn-nav4" href="post5.html" target="_blank" rel="noopener noreferrer">family reunion visa</a>;</p>
+                  
+                <p>XII – Temporary Visa XII – artistic or sports activities visa;</p>
+                  
+                <p>XIII – Temporary Visa XIII – temporary visas due to international agreements;</p>
+                  
+                <p>XIV – Temporary Visa XIV - temporary visas due to the Brazilian immigration policy;</p>
+                  
+                <p class="space">XV – VICAM - Temporary Visa for foreign doctors (medical training).</p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="8">Mercosur citizens</p>
+                <hr>
+                <p style="text-align:left" class="space">Nationals of countries which joined the Agreement on Residence for Nationals of Mercosur, namely: Argentina, Paraguay, Uruguay, Bolivia, Chile, Colombia, Ecuador and Peru, may apply at a Consular Office for a temporary residence visa (VITEM XIII). Those who already live in Brazil can go directly to the Ministry of Justice. After two years in Brazil, holders of a temporary residence visa can request residence for an indefinite period at the Federal Police.</p>
+              </div>
+              <br>
+              <div>
+                <p style="text-align:left" class="font1 size2" id="9">Legal framework</p>
+                <hr>
+                <p style="text-align:left">
+
+                  <a class="btn-nav4" href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/L13445.htm" target="_blank" rel="noopener noreferrer">Lei nº 13.445, de 24 de maio de 2017</a> (Law n. 13.445/2017)</p>
+                  
+                  <p><a class="btn-nav4" href="http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/Decreto/D9199.htm" target="_blank" rel="noopener noreferrer">Decreto nº 9.199, de 20 de novembro de 2017</a> (Decree n. 9.199/2017)</p>
+                  
+                  <p><a class="btn-nav4" href="https://www.gov.br/trabalho-e-previdencia/pt-br" target="_blank" rel="noopener noreferrer">Resoluções Normativas do Conselho Nacional de Imigração</a> (Normative Resolutions from the National Council of Immigration)</p>
+                  
+                  <p><a class="btn-nav4" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=515&pagina=76&data=22/11/2017" target="_blank" rel="noopener noreferrer">Portaria MRE Nº 938 DE 21/11/2017</a> (Electronic Visa)</p>
+                  
+                  <p><a class="btn-nav4" href="https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?jornal=515&pagina=953&data=26/12/2017" target="_blank" rel="noopener noreferrer">Portaria MRE Nº 1001 DE 20/12/2017</a> (Visit Visa – exceptional situations)</p>
+              </div>
+            </div> 
+              
+          </div>
+          <div class="col-11 col-lg-4">
+                  
+          <!--content widget-->
+          <div class="sticky">
+          <div class="padding2">
+            <div class="display3 card my-4">
+              <h5 style="text-align:left" class="card-header font2">Content</h5>
+                <div class="card-body autocom-box">
+                  <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Do you need a visa?</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Where to apply for a visa?</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">Visit visa</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Other types of visa</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted padding4">a) Diplomatic Visa</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="text-muted padding4">b) Courtesy Visa</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="text-muted padding5">c) Temporary Visa</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="text-muted padding3">Mercosur citizens</h6></a>
+                  <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="text-muted minbreak">Legal framework</h6></a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- legibility Widget -->
+            <div class="display3 legibility">
+              <tr>
+                <table class="row justify-content-center box2">
+                  <td class="box box3" style="text-align:center" onclick="onClick()">
+                    <div>
+                      <i class="fas fa-align-left line-icon"></i>
+                    </div>
+                    <div class="noselect">
+                      <h6>Line Hight <span id="result3"></span></h6>
+                      <div class="steps" id="steps3">
+                        <span id="step7">&#8213;</span>
+                        <span id="step8">&#8213;</span>
+                        <span id="step9">&#8213;</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="box" style="text-align:center" onclick="onClick2()">
+                    <div>
+                      <i class="fas fa-text-height line-icon"></i>
+                    </div>
+                    <div class="noselect">
+                      <h6>Text Size <span id="result4"></span></h6>
+                      <div class="steps" id="steps4">
+                        <span id="step10">&#8213;</span>
+                        <span id="step11">&#8213;</span>
+                        <span id="step12">&#8213;</span>
+                      </div>
+                    </div>
+                  </td>
+                </table>   
+              </tr>
+            </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <br><br><br><br><br>
+
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Call to Action -->
+<section class="call-to-action text-center" id="join">
+  <!-- <div class="overlay"></div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 mx-auto">
+        <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-8 mb-2 mb-md-0">
+              <input type="email" class="form-control email-box custom2 font4" placeholder="Enter your email...">
+            </div>
+            <div class="col-12 col-md-4">
+              <button type="submit" class="btn btn-block btn-show custom2 font4">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="footer bg-light">
+  <div class="col-lg-6 h-100 text-center my-auto display2">
+    <ul class="list-inline mb-2">
+      <li class="list-inline-item spacing">
+        <a class="color6 font4 spacing dark2" href="visadark.html">Dark Mode <i class="fas fa-moon"></i></a>
+      </li>
+      <li class="list-inline-item spacing">
+        <a class="weight2 color6 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2">
+        <ul class="list-inline mb-2"> 
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="about.html">About</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="contact.html">Contact</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="terms.html">Terms of Use</a>
+          </li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="privacy.html">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
+      </div>
+
+      <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4 dark" href="visadark.html">Dark Mode <i class="fas fa-moon"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a class="weight2 color6 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+  <!-- Bootstrap core JS-->
+  <!--<script src="vendor/jquery/jquery.min.js"></script>-->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+  <!--<script src="mail/jqBootstrapValidation.js"></script>-->
+  <!--<script src="mail/contact_me.js"></script>-->
+  <!-- Core theme JS-->
+  <!--<script src="js/scripts.js"></script>-->
+
+</body>
+
+</html>

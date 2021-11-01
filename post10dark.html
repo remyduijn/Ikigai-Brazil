@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en" translate="no"> 
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brazil Travel & Immigration</title>
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+ 
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+   <!--Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+  <!-- font-family Paytone One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap" rel="stylesheet">
+
+
+<script>
+  //collapse nav-bar when clicked outside
+  window.onclick = function(event){
+      if(!event.target.matches('.navbar-toggler')){
+            $(".navbar-collapse").collapse("hide");
+      }
+  } 
+
+
+
+  var clicks = 0;
+  var clicks2 = 0;
+
+  function onClick() {
+    clicks += 1;
+    // document.getElementById("clicks").innerHTML = clicks;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+
+    if (clicks == "0")
+    {
+      document.getElementById("steps").style.display = "none"
+      document.getElementById("steps3").style.display = "none"
+      document.getElementById("result").innerHTML = ""
+      document.getElementById("result3").innerHTML = ""
+
+      if (clicks == "0" && clicks2 == "0")
+      {
+        height.style.lineHeight = ""    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "0" && clicks2 == "1")
+      {
+        height.style.lineHeight = "1.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "0" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "0" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "1")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "#2e57c7"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "#2e57c7"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.5x)"
+      document.getElementById("result3").innerHTML = "(1.5x)"
+
+      if (clicks == "1" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2rem"    
+        size.fontSize = "1rem"
+      }
+      if (clicks == "1" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "1" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "1" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "2")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "#2e57c7"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "#2e57c7"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.75x)"
+      document.getElementById("result3").innerHTML = "(1.75x)"
+
+      if (clicks == "2" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2.5rem"    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "2" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "2" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "2" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "3")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "#2e57c7"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "#2e57c7"
+      document.getElementById("result").innerHTML = "(2x)"
+      document.getElementById("result3").innerHTML = "(2x)"
+
+      if (clicks == "3" && clicks2 == "0")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1rem"    
+      }
+      if (clicks == "3" && clicks2 == "1")
+      {
+        height.style.lineHeight = "3.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "3" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "3" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+      
+      clicks -= 4;
+    }
+  };
+
+
+
+  function onClick2() {
+    clicks2 += 1;
+    // document.getElementById("clicks2").innerHTML = clicks2;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+    var size2 = document.getElementsByClassName("size2");
+    var size3 = document.getElementsByClassName("size3");
+
+    if (clicks2 == "0")
+    {
+      document.getElementById("steps2").style.display = "none"
+      document.getElementById("steps4").style.display = "none"
+      document.getElementById("result2").innerHTML = ""
+      document.getElementById("result4").innerHTML = ""
+      size.style.fontSize = "1rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.5rem"}
+      size3[0].style.fontSize = "1.2rem"
+      size3[1].style.fontSize = "1.2rem"
+      size3[2].style.fontSize = "1.2rem"
+      size3[3].style.fontSize = "1.2rem"
+      size3[4].style.fontSize = "1.2rem"
+      size3[5].style.fontSize = "1.2rem"
+      size3[6].style.fontSize = "1.2rem"
+      size3[7].style.fontSize = "1.2rem"
+      size3[8].style.fontSize = "1.2rem"
+      size3[9].style.fontSize = "1.2rem"
+      size3[10].style.fontSize = "1.2rem"
+      size3[11].style.fontSize = "1.2rem"
+      size3[12].style.fontSize = "1.2rem"
+      size3[13].style.fontSize = "1.2rem"
+      size3[14].style.fontSize = "1.2rem"
+
+      if (clicks2 == "0" && clicks == "0")
+      {
+        height.style.lineHeight = ""
+      }
+      if (clicks2 == "0" && clicks == "1")
+      {
+        height.style.lineHeight = "2rem"
+      }
+      if (clicks2 == "0" && clicks == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+      }
+      if (clicks2 == "0" && clicks == "-1")
+      {
+        height.style.lineHeight = "3rem"
+      }
+    }
+
+    if (clicks2 == "1")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "#2e57c7"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "#2e57c7"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(m)"
+      document.getElementById("result4").innerHTML = "(m)"
+      size.style.fontSize = "1.2rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.6rem"}
+      size3[0].style.fontSize = "1.4rem"
+      size3[1].style.fontSize = "1.4rem"
+      size3[2].style.fontSize = "1.4rem"
+      size3[3].style.fontSize = "1.4rem"
+      size3[4].style.fontSize = "1.4rem"
+      size3[5].style.fontSize = "1.4rem"
+      size3[6].style.fontSize = "1.4rem"
+      size3[7].style.fontSize = "1.4rem"
+      size3[8].style.fontSize = "1.4rem"
+      size3[9].style.fontSize = "1.4rem"
+      size3[10].style.fontSize = "1.4rem"
+      size3[11].style.fontSize = "1.4rem"
+      size3[12].style.fontSize = "1.4rem"
+      size3[13].style.fontSize = "1.4rem"
+      size3[14].style.fontSize = "1.4rem"
+
+      if (clicks2 == "1" && clicks == "0")
+      {
+        height.style.lineHeight = "1.7rem" 
+      }
+      if (clicks2 == "1" && clicks == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+      }
+      if (clicks2 == "1" && clicks == "2")
+      {
+        height.style.lineHeight = "2.7rem"
+      }
+      if (clicks2 == "1" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.2rem"
+      }
+    }
+
+    if (clicks2 == "2")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "#2e57c7"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "#2e57c7"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(l)"
+      document.getElementById("result4").innerHTML = "(l)"
+      size.style.fontSize = "1.5rem"  
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.8rem"}
+      size3[0].style.fontSize = "1.6rem"
+      size3[1].style.fontSize = "1.6rem"
+      size3[2].style.fontSize = "1.6rem"
+      size3[3].style.fontSize = "1.6rem"
+      size3[4].style.fontSize = "1.6rem"
+      size3[5].style.fontSize = "1.6rem"
+      size3[6].style.fontSize = "1.6rem"
+      size3[7].style.fontSize = "1.6rem"
+      size3[8].style.fontSize = "1.6rem"
+      size3[9].style.fontSize = "1.6rem"
+      size3[10].style.fontSize = "1.6rem"
+      size3[11].style.fontSize = "1.6rem"
+      size3[12].style.fontSize = "1.6rem"
+      size3[13].style.fontSize = "1.6rem"
+      size3[14].style.fontSize = "1.6rem"
+
+      if (clicks2 == "2" && clicks == "0")
+      {
+        height.style.lineHeight = "2rem"   
+      }
+      if (clicks2 == "2" && clicks == "1")
+      {
+        height.style.lineHeight = "2.5rem"   
+      }
+      if (clicks2 == "2" && clicks == "2")
+      {
+        height.style.lineHeight = "3rem"   
+      }
+      if (clicks2 == "2" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.5rem"   
+      }
+    }
+
+    if (clicks2 == "3")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "#2e57c7"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "#2e57c7"
+      document.getElementById("result2").innerHTML = "(xl)"
+      document.getElementById("result4").innerHTML = "(xl)"
+      size.style.fontSize = "1.8rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "2rem"}
+      size3[0].style.fontSize = "1.8rem"
+      size3[1].style.fontSize = "1.8rem"
+      size3[2].style.fontSize = "1.8rem"
+      size3[3].style.fontSize = "1.8rem"
+      size3[4].style.fontSize = "1.8rem"
+      size3[5].style.fontSize = "1.8rem"
+      size3[6].style.fontSize = "1.8rem"
+      size3[7].style.fontSize = "1.8rem"
+      size3[8].style.fontSize = "1.8rem"
+      size3[9].style.fontSize = "1.8rem"
+      size3[10].style.fontSize = "1.8rem"
+      size3[11].style.fontSize = "1.8rem"
+      size3[12].style.fontSize = "1.8rem"
+      size3[13].style.fontSize = "1.8rem"
+      size3[14].style.fontSize = "1.8rem"
+
+      if (clicks2 == "3" && clicks == "0")
+      {
+        height.style.lineHeight = "2.3rem" 
+      }
+      if (clicks2 == "3" && clicks == "1")
+      {
+        height.style.lineHeight = "2.8rem" 
+      }
+      if (clicks2 == "3" && clicks == "2")
+      {
+        height.style.lineHeight = "3.3rem"
+      }
+      if (clicks2 == "3" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.8rem"   
+      }
+      
+      clicks2 -= 4; 
+    } 
+  };
+
+</script>
+
+
+<style>
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.padding{
+  padding-bottom: 20px;
+}
+
+.img-fluid{
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.font1{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.font2{
+  font-size: 1.3rem;
+  font-weight: 300; 
+}
+
+.font4{
+  font-family: 'Raleway', sans-serif;
+}
+
+.font5{
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+.btn {
+  text-align: center;
+  color: #1d809f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  width: 100%;
+  background-color: var(--lgt-blue);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--lgt-blue);
+  border-color: var(--lgt-blue);
+}
+
+.floatb{
+  margin-left: 15px;
+  margin-top: 35px;
+  max-width: 65px;
+  font-size:1.5rem;
+}
+@media (min-width:1700px){
+  .floatb{
+    margin-top: 44px;
+}}
+
+.display2{
+  display:none;
+}
+@media (max-width:992px){.display2{display:block;}}
+
+@media (max-width:992px){.display3{display:none;}}
+
+.padding2{
+  margin-top:-1rem;
+}
+
+.padding2-2{
+  margin-top:-6rem;
+}
+
+.padding3{
+  padding-bottom: 5px;
+}
+
+.padding4{
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+.padding5{
+  font-size: 15px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+}
+
+.autocom-box{
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.btn-nav4{
+  color:#22b294!important;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #22b29500!important;
+} 
+.btn-nav4:hover{
+  background-color:#22b294!important;
+  color: white!important;
+  border: 1px solid #22b294!important;
+  border-radius: 5px;
+}
+
+.margin2{
+  margin-top: 0.5rem;
+}
+@media (min-width:768px){
+  .margin2{
+    margin-top: 1rem;
+}}
+@media (min-width:1700px){
+  .margin2{
+    margin-left:-100px; 
+    margin-right:-100px;
+    margin-top: 3rem;
+}}
+
+@media (max-width:768px){.post-title {font-size:1.7rem;}}
+
+.line-icon{
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  opacity: 0.8;
+  color: white;
+}
+
+.box{
+  background-color: #22252a;
+  width: 280px;
+  border-radius: 3px;
+}
+.box:hover{background-color: #f7f7f723;  cursor: pointer;}
+
+.box2{
+  border: 1px solid #6c747d;
+  border-radius: 3px;
+  background-color: #22252a;
+}
+
+.box3{
+  border-right: 1px solid #6c747d;
+}
+
+.steps{
+  margin-top: -0.6rem;
+  margin-bottom: -0.3rem;
+  display: none;
+  opacity: 0.8;
+}
+
+.legibility{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.legibility2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.break{
+  padding-bottom: 0.7rem;
+}
+
+.minbreak{
+  margin-bottom: -1px;
+}
+
+.minbreak2{
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: -1px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 15px;
+}
+
+.space{
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+/* dark theme */
+.navbar{
+  background-color: #22252a;
+}
+
+.btn-nav{
+  color: #bfbfbf!important;
+}
+.btn-nav:hover{
+  color: white!important;
+}
+
+.btn-nav2{
+  color: white!important;
+}
+
+.btn-nav3{
+  margin-top: 6%;
+}
+@media (max-width:992px){
+.btn-nav3{
+  margin-top: 2%;
+}}
+
+.bgdark{
+  background-color: #1f2126;
+}
+
+.email-box{
+  background-color: rgba(0, 0, 0, 0.6);
+  color:#f9f8fa!important;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.email-box:focus{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline:none;
+}
+
+.footer{
+  background-color: #1f2126;
+}
+
+.color3{
+  color: #bfbfbf!important;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.underline{
+  border-top: 1px solid #6c747d;
+}
+
+.card-body{
+  background-color: #22252a;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.card{
+  border-color: #6c747d;
+}
+
+.btn-show3{
+  border-color:#bfbfbf!important; 
+  background-color:#22252a!important;
+} 
+
+.custom3{
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.4);
+}
+ 
+.dark2:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+.dark3{
+  padding-right: 2rem;
+}
+.dark3:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+body p{color: #f9f8fa;}
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body id="page-top" class="bgdark">
+
+  <!-- Navigation -->
+  <br><br>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="indexdark.html"><img src="img2/logos/logoikigaidark.png" alt=""/></a>
+      <button class="navbar-toggler text-white navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item upper">
+            <a class="nav-link btn-nav" href="indexdark.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="traveldark.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="immigrationdark.html">Immigration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav2" href="articlesdark.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.skyscanner.com.br/?currency=EUR&previousCultureSource=COOKIE&redirectedFrom=www.skyscanner.com" target="_blank" rel="noopener noreferrer">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav3 js-scroll-trigger" href="#join">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  
+  
+  <!-- Page Content -->
+  <section class="page-section">
+  
+  <a class="btn btn-show3 btn-sm floatb" href="articlesdark.html">&#8592;</a>
+  
+  <br>
+  <div class="container">
+
+    <div class="row margin2">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h2 class="mt-4 post-title color5">Typical Brazilian foods</h2>
+        <hr class="underline">
+        <!-- Date/Time -->
+        <p>Published on June 20, 2021</p>
+        <hr class="underline">
+      </div>
+
+        <!--content widget-->
+        <div class="display2 container">
+          <div class="row justify-content-center"> 
+            <div class="col-11 col-lg-4">                  
+              <div class="padding2">
+                <div class="card my-4">
+                  <h5 style="text-align:left" class="card-header font2">Content</h5>
+                    <div class="card-body autocom-box">
+                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="color5 padding3">Typical foods of the Southeast</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="color5 padding4">› Pão de queijo</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="color5 padding4">› Feijoada</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="color5 padding5">› Moqueca capixaba</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="color5 padding3">Typical foods of the Northeast</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="color5 padding4">› Acarajé</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="color5 padding4">› Carne de sol</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="color5 padding5">› Tapioca</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="color5 padding3">Typical foods of the North</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#10"><h6 style="text-align:left" class="color5 padding4">› Açaí</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#11"><h6 style="text-align:left" class="color5 padding4">› Pato no tucupi</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#12"><h6 style="text-align:left" class="color5 padding5">› Tacacá</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#13"><h6 style="text-align:left" class="color5 padding3">Typical foods of the Midwest</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#14"><h6 style="text-align:left" class="color5 padding4">› Pamonha</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#15"><h6 style="text-align:left" class="color5 padding4">› Arroz com pequi</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#16"><h6 style="text-align:left" class="color5 padding5">› Caldo de piranha</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#17"><h6 style="text-align:left" class="color5 padding3">Typical foods of the South</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#18"><h6 style="text-align:left" class="color5 padding4">› Churrasco</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#19"><h6 style="text-align:left" class="color5 padding4">› Pinhão</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#20"><h6 style="text-align:left" class="color5 minbreak2">› Arroz carreteiro</h6></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--legibility widget-->
+                <div class="legibility2">
+                  <tr>
+                    <table class="row justify-content-center box2">
+                      <td class="box box3" style="text-align:center" onclick="onClick()">
+                            <div>
+                              <i class="fas fa-align-left line-icon"></i>
+                            </div>
+                            <div class="noselect text-white">
+                              <h6>Line Hight <span id="result"></span></h6>
+                              <div class="steps" id="steps">
+                                <span id="step1">&#8213;</span>
+                                <span id="step2">&#8213;</span>
+                                <span id="step3">&#8213;</span>
+                              </div>
+                            </div>
+                      </td>
+                      <td class="box" style="text-align:center" onclick="onClick2()">
+                            <div>
+                              <i class="fas fa-text-height line-icon"></i>
+                            </div>
+                            <div class="noselect text-white">
+                              <h6>Text Size <span id="result2"></span></h6>
+                              <div class="steps" id="steps2">
+                                <span id="step4">&#8213;</span>
+                                <span id="step5">&#8213;</span>
+                                <span id="step6">&#8213;</span>
+                              </div>
+                            </div>
+                      </td>
+                    </table>   
+                  </tr>
+                </div>
+
+              </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-8" id="height">
+          <div id="size">
+
+          <!-- Post Content -->
+          <p>What is typical Brazilian food? This may be a question you've asked yourself at some point. After all, Brazil is a country of continental proportions and with such a varied gastronomy, it is indeed difficult to objectively define an answer to this question.</p>
+          <p>This is because there are many different styles arising from the cultural influences Brazil received throughout its social formation. Brazilian cuisine is as diverse as its people. With strong indigenous and African contributions, and the influence of colonization and immigrant populations, it couldn't have been any different.</p>
+          <p class="space">Each region of Brazil offers different gastronomic experiences due to the use of regional elements and ingredients, which add different flavors and colors to their dishes. The creativity of Brazilians in the kitchen turns even the simplest foods into true icons in the world gastronomy.</p>
+          <br>
+                
+          <p style="text-align:left" class="font1 size2" id="1">Typical foods of the Southeast</p>
+          <hr class="underline">
+          <p>Each corner of Brazil has its peculiarities, traditions and customs. And when it comes to the cuisine, diversity also comes into play in the typical Brazilian foods and beverages. Let's start our gastronomic tour in the Southeast region.</p>
+          <p style="text-align:left" class="font5 size3" id="2"><u>Pão de queijo</u></p>
+          <p>There is no way to go to Minas Gerais and not taste its pão de queijo (cheese bread). Pão de queijo is one of the greatest symbols of Minas Gerais cuisine and there is no shortage of candidates for this position, such is the wealth of gastronomy in Minas Gerais. However, the cheese bread wins because of its versatility, being a food for any time, especially accompanied by some coffee.</p>
+          <p class="space">Despite the name “bread”, this delicacy does not contain wheat flour but tapioca flour, which comes from the cassava root vegetable. History tells us that this recipe emerged on farms in Minas Gerais in an attempt to replace wheat flour in some dishes, at a time when access to this product was scarce.</p>
+          <img class="img-fluid rounded" src="img/posts/pao.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="3"><u>Feijoada</u></p>
+          <p>Among the typical foods of Brazil, feijoada is undoubtedly the most famous – not only throughout the country, but also abroad. The history of this typical dish goes back to the era of slavery, when slaves were fed foods that were not consumed by the masters, which gave rise to feijoada.</p>
+          <p class="space">This dish is made from a mixture of black beans with different parts of the pig, such as the foot, tail and ears, as well as dried meat and sausage. When served, the feijoada is accompanied by rice, cabbage and farinha.</p>
+          <img class="img-fluid rounded" src="img/posts/feijoada.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="4"><u>Moqueca capixaba</u></p>
+          <p class="space">This is a typical dish from the state of Espírito Santo, but it is famous throughout Brazil. Moqueca capixaba consists of cooked fish, with vegetables and seafood. It can be made with several types of fish, such as sea bass or dorado, but what cannot change in the preparation is the use of the clay pot, which brings with it a lot of tradition.</p>
+          <img class="img-fluid rounded" src="img/posts/moqueca.jpg" alt="">
+          <br><br><br>
+
+          <p style="text-align:left" class="font1 size2" id="5">Typical foods of the Northeast</p>
+          <hr class="underline">
+          <p>The Northeast region is not only rich in its traditions, dances and natural beauty. Northeastern cuisine is full of striking colors and flavors, which pleases the most demanding palates.</p>
+          <p style="text-align:left" class="font5 size3" id="6"><u>Acarajé</u></p>
+          <p>Acarajé is a typical dish of Bahia, made by Bahian traditions in their stalls on the street. It is a typical Brazilian food that also recalls the African heritage that Brazil has, which today enchants locals as well as tourists who pass by.</p>
+          <p>Acarajé is a black-eyed bean dumpling, fried in palm oil and stuffed with vatapá (another typical dish from the Northeast), dried shrimp and vinaigrette, in addition to hot pepper. With this last one you have to be careful, because in Bahia a spicy dish is really spicy.
+          <p class="space">When asked if you want the acarajé hot or cold, be aware that “hot” means spicy and not the temperature of the dish. If you're not used to it, leave the hot pepper aside.</p>
+          <img class="img-fluid rounded" src="img/posts/acaraje.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="7"><u>Carne de sol</u></p>
+          <p>Carne de sol is part of several dishes in the northeastern cuisine, being very traditional in this part of the country. It is tender bovine meat, which undergoes a salting process.
+          <p class="space">This traditional Brazilian food takes its name because, in the past, it was placed to dry in the sun, starting the process called “cura”. Nowadays, its preparation has become more modern and the meat is no longer taken to the sun, but to a refrigerated area. Carne de sol can be used in dishes such as baião de dois and feijoada, as well as served with green beans, grilled cheese and fried cassava.</p>
+          <img class="img-fluid rounded" src="img/posts/carnesol.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="8"><u>Tapioca</u></p>
+          <p>Tapioca has an indigenous origin, but over time it has spread throughout the region to the point of being recognized as a typical Brazilian dish in the Northeast. Its origin comes from the granulated cassava starch, which, when heated, sticks together and forms a kind of pancake.</p>
+          <p class="space">It has become very famous in recent years for being a great bread substitute for those who are gluten intolerant. Its versatility is also a contributor to its success, as it can be filled with savory foods such as shredded chicken, turkey breast and cheese, as well as sweet foods such as nutella or caramel.</p>
+          <img class="img-fluid rounded" src="img/posts/tapioca.jpg" alt="">
+          <br><br><br>
+            
+          <p style="text-align:left" class="font1 size2" id="9">Typical foods of the North</p>
+          <hr class="underline">
+          <p>The north of the country, in addition to its beautiful landscapes and history, also has its gastronomy as one of the strong suits that is part of many tourist's itinerary. The recipes and forms of preparation follow traditions of ancient tribes, such as the Indians and also the Europeans. The result is delicious food that you won't find anywhere else in the world.</p>
+          <p style="text-align:left" class="font5 size3" id="10"><u>Açaí</u></p>
+          <p>Upon arriving in the North of Brazil, the gastronomic tour will commence with the famous açaí. This fruit is consumed in different ways throughout the country. In this part of Brazil, it is a typical food and is present in the daily meals of the northerners. Açaí is found everywhere, such as in restaurants, bars, kiosks and stalls.</p>
+          <p class="space">In several places in the country, açaí is consumed in the form of desserts and juices, but in the North it is served with shrimp and fried fish, as well as cassava flour. Best of all, this purple berry is great for your health, as it has vitamins, phosphorus, calcium and iron, among other properties.</p>
+          <img class="img-fluid rounded" src="img/posts/acai.jpg" alt="">
+          
+          <p style="text-align:left" class="font5 size3" id="11"><u>Pato no tucupi</u></p>
+          <p>Pato no tucupi is a typical dish from the state of Pará made of roast duck and includes regional ingredients such as tucupi (yellow broth extracted from wild manioc root, a technique of indigenous wisdom) and jambu leaf, which causes a slight numbness in the mouth when consumed. A tradition from Pará is to eat pato no tucupi on the day of Círio de Nazaré, a religious festival that takes place in Belém in October.</p>
+          <p class="space">It is originally an indigenous recipe, which used tucupi to prepare wild ducks, roasting them in stone stoves. A curiosity here is that tucupi is initially poisonous, it has to be boiled slowly for many hours so that it loses all its hydrocyanic acid.</p>
+          <img class="img-fluid rounded" src="img/posts/pato.jpg" alt="">
+          
+          <p style="text-align:left" class="font5 size3" id="12"><u>Tacacá</u></p>
+          <p>Tacacá is a traditional dish from the Amazon region and is a famous street food in the states of Pará and Amazonas. This delicacy is also made with tucupi and jambu, with the addition of dried shrimp, chicory, tapioca starch, in addition to various spices such as aromatic chili pepper, garlic and cilantro. Even on hot days, the heavy broth is consumed very hot.</p>
+          <p class="space">Tacacá is also a delicacy of indigenous origin, which is part of the typical Brazilian foods, and very famous throughout the north of the country.</p>
+          <img class="img-fluid rounded" src="img/posts/tacaca.jpg" alt="">
+          <br><br><br>
+
+          <p style="text-align:left" class="font1 size2" id="13">Typical foods of the Midwest</p>
+          <hr class="underline">
+          <p>We arrived at the typical Brazilian cuisine of the Midwest. The local gastronomy is also included in the list of regions with cultures with a unique gastronomy full of flavor. When visiting this corner of Brazil, be sure to take the time to stop at a good restaurant and taste the best of midwestern cuisine.</p>
+          <p style="text-align:left" class="font5 size3" id="14"><u>Pamonha</u></p>
+          <p>If you haven't enjoyed this typical dish yet, you don't know what you're missing. In addition to the Midwest, pamonha is very popular in several states, such as Minas Gerais and São Paulo.</p>
+          <p class="space">With indigenous origin, the recipe is based on corn, which is grated and mixed with milk, butter, salt or sugar. After turning a homogeneous mass, it is cooked in a cauldron of water until it becomes consistent. Pamonha is one of the tastiest typical Brazilian dishes.</p>
+          <img class="img-fluid rounded" src="img/posts/pamonha.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="15"><u>Arroz com pequi</u></p>
+          <p>Pequi is a native fruit of the savanna-like environment of the Midwest with a remarkable and peculiar taste. It is considered the culinary jewel of the Midwest, being the ingredient for many traditional recipes in the region. One of them is the famous rice with pequi, which is widely consumed in the daily lives of local residents.</p>
+          <p class="space">Pequi is very aromatic, caloric and with a slightly sweet taste. Maybe the bittersweet flavor is not your thing, but you should definitely give it a try. The dish basically consists of a normal rice, but cooked together with the pequi. This gives the rice a yellow color, in addition to the very characteristic flavor and smell.</p>
+          <img class="img-fluid rounded" src="img/posts/arroz.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="16"><u>Caldo de piranha</u></p>
+          <p>The fish that causes fear to so many people also serves as the basis for a delicious broth typical of the region. As it is a very abundant fish in the rivers of the Pantanal, it ends up being a permanent feature in the routine meals of the local population and delights tourists for being very tasty and also for its aphrodisiac properties.</p>
+          <p class="space">It is usually made with the meat of the piranha beaten and mixed with onions and bell pepper. Seasoned with garlic, salt and paprika, the broth also contains herbs such as bay leaves, basil and chilli pepper. It is commonly served as a starter, accompanied by toast.</p>
+          <img class="img-fluid rounded" src="img/posts/piranha.jpg" alt="">
+          <br><br><br>
+
+          <p style="text-align:left" class="font1 size2" id="17">Typical foods of the South</p>
+          <hr class="underline">
+          <p>With European influences, the southern cuisine is attractive to all tastes. Many of its typical dishes follow ancient recipes, preserving the originality of its ancestors. The best part is that the cuisine of the South of Brazil has a reference from various countries of the European continent, guaranteeing a lot of diversity.</p>
+          <p style="text-align:left" class="font5 size3" id="18"><u>Churrasco</u></p>
+          <p>Barbecue is perhaps the best known dish in Rio Grande do Sul. There is no one who has never heard of the Gaucho barbecue. They really are experts when it comes to meat.</p>
+          <p class="space">It is believed that the origin of this tradition dates back to the mid-17th century, when cattle was abundant in the region, of which the most valued part was the leather. Thus, beef became one of the main components of the diet of the people of that region, who developed the best techniques to prepare it.</p>
+          <img class="img-fluid rounded" src="img/posts/churrasco.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="19"><u>Pinhão</u></p>
+          <p>For those who have not yet eaten pine nuts, on their trip through the south of the country, this dish cannot be left out of the list of Brazilian foods. Pinhão is a seed of an araucaria angustifolia tree and, in the past, was the main food of indigenous tribes.</p>
+          <p class="space">One of the ways to enjoy this traditional food is to cook the fruit with a little salt. It is also used in recipes such as risotto, farofa and cakes, among others.</p>
+          <img class="img-fluid rounded" src="img/posts/pinhao.jpg" alt="">
+
+          <p style="text-align:left" class="font5 size3" id="20"><u>Arroz carreteiro</u></p>
+          <p>This rice dish originated in the state of Rio Grande do Sul and has its name because the recipe was made by carreteiros (truck drivers) who took rice, charque (similar to dried meat, but with a higher salt content), onion, salt and an iron pot for its preparation. Currently, the dish can also be made with ground meat and barbecue leftovers, which is a great way to avoid waste.</p>
+          <p class="space"></p>
+          <img class="img-fluid rounded" src="img/posts/carreteiro.jpg" alt="">
+
+
+
+
+
+        </div>
+        </div>
+      
+
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-11 col-lg-4 justify-content-center">
+
+
+        <!-- content Widget -->
+        <div class="sticky">
+        <div class="padding2-2">
+          <div class="display3 card my-4">
+            <h5 style="text-align:left" class="card-header font2">Content</h5>
+              <div class="card-body autocom-box">
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="color5 padding3">Typical foods of the Southeast</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="color5 padding4">› Pão de queijo</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="color5 padding4">› Feijoada</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="color5 padding5">› Moqueca capixaba</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="color5 padding3">Typical foods of the Northeast</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="color5 padding4">› Acarajé</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="color5 padding4">› Carne de sol</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="color5 padding5">› Tapioca</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="color5 padding3">Typical foods of the North</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#10"><h6 style="text-align:left" class="color5 padding4">› Açaí</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#11"><h6 style="text-align:left" class="color5 padding4">› Pato no tucupi</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#12"><h6 style="text-align:left" class="color5 padding5">› Tacacá</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#13"><h6 style="text-align:left" class="color5 padding3">Typical foods of the Midwest</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#14"><h6 style="text-align:left" class="color5 padding4">› Pamonha</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#15"><h6 style="text-align:left" class="color5 padding4">› Arroz com pequi</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#16"><h6 style="text-align:left" class="color5 padding5">› Caldo de piranha</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#17"><h6 style="text-align:left" class="color5 padding3">Typical foods of the South</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#18"><h6 style="text-align:left" class="color5 padding4">› Churrasco</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#19"><h6 style="text-align:left" class="color5 padding4">› Pinhão</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#20"><h6 style="text-align:left" class="color5 minbreak2">› Arroz carreteiro</h6></a>
+              </div>
+          </div>
+        </div>
+
+        <!-- legibility Widget -->
+        <div class="display3 legibility">
+          <tr>
+            <table class="row justify-content-center box2">
+              <td class="box box3" style="text-align:center" onclick="onClick()">
+                <div>
+                  <i class="fas fa-align-left line-icon"></i>
+                </div>
+                <div class="noselect text-white">
+                  <h6>Line Hight <span id="result3"></span></h6>
+                  <div class="steps" id="steps3">
+                    <span id="step7">&#8213;</span>
+                    <span id="step8">&#8213;</span>
+                    <span id="step9">&#8213;</span>
+                  </div>
+                </div>
+              </td>
+              <td class="box" style="text-align:center" onclick="onClick2()">
+                <div>
+                  <i class="fas fa-text-height line-icon"></i>
+                </div>
+                <div class="noselect text-white">
+                  <h6>Text Size <span id="result4"></span></h6>
+                  <div class="steps" id="steps4">
+                    <span id="step10">&#8213;</span>
+                    <span id="step11">&#8213;</span>
+                    <span id="step12">&#8213;</span>
+                  </div>
+                </div>
+              </td>
+            </table>   
+          </tr>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  </section>
+  
+        
+  
+  <!-- Call to Action -->
+  <section class="call-to-action text-center" id="join">
+    <!-- <div class="overlay"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 mx-auto">
+          <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-8 mb-2 mb-md-0">
+                <input type="email" class="form-control email-box font4" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-4">
+                <button type="submit" class="btn btn-block btn-show custom3 font4">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="col-lg-6 h-100 text-center my-auto display2">
+      <ul class="list-inline mb-2">
+        <li class="list-inline-item spacing">
+          <a class="color3 font4 spacing dark2" href="post10.html">Light Mode <i class="fas fa-sun"></i></a>
+        </li>
+        <li class="list-inline-item spacing">
+          <a class="weight2 color3 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+        </li>
+      </ul>
+    </div>
+   
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="aboutdark.html">About</a>
+            </li>
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="contactdark.html">Contact</a>
+            </li>
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item"> 
+              <a class="weight2 color3 font4" href="termsdark.html">Terms of Use</a>
+            </li> 
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="privacydark.html">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
+        </div>
+  
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="color3 font4 dark3" href="post10.html">Light Mode <i class="fas fa-sun"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
+
+<!-- Bootstrap core JS-->
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<!--<script src="mail/jqBootstrapValidation.js"></script>-->
+<!--<script src="mail/contact_me.js"></script>-->
+<!-- Core theme JS-->
+<!--<script src="js/scripts.js"></script>-->
+
+</body>
+
+</html>

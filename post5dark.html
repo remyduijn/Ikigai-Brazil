@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" translate="no"> 
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brazil Travel & Immigration</title>
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+   <!--Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+ 
+  <!-- Custom fonts for this template -->
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet">
+
+  <!-- font-family Paytone One -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Raleway&display=swap" rel="stylesheet">
+
+
+<script>
+  //collapse nav-bar when clicked outside
+  window.onclick = function(event){
+      if(!event.target.matches('.navbar-toggler')){
+            $(".navbar-collapse").collapse("hide");
+      }
+  } 
+
+
+
+  var clicks = 0;
+  var clicks2 = 0;
+
+  function onClick() {
+    clicks += 1;
+    // document.getElementById("clicks").innerHTML = clicks;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+
+    if (clicks == "0")
+    {
+      document.getElementById("steps").style.display = "none"
+      document.getElementById("steps3").style.display = "none"
+      document.getElementById("result").innerHTML = ""
+      document.getElementById("result3").innerHTML = ""
+
+      if (clicks == "0" && clicks2 == "0")
+      {
+        height.style.lineHeight = ""    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "0" && clicks2 == "1")
+      {
+        height.style.lineHeight = "1.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "0" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "0" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "1")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "#2e57c7"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "#2e57c7"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.5x)"
+      document.getElementById("result3").innerHTML = "(1.5x)"
+
+      if (clicks == "1" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2rem"    
+        size.fontSize = "1rem"
+      }
+      if (clicks == "1" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "1" && clicks2 == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "1" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "2.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "2")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "#2e57c7"
+      document.getElementById("step3").style.color = "black"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "#2e57c7"
+      document.getElementById("step9").style.color = "black"
+      document.getElementById("result").innerHTML = "(1.75x)"
+      document.getElementById("result3").innerHTML = "(1.75x)"
+
+      if (clicks == "2" && clicks2 == "0")
+      {
+        height.style.lineHeight = "2.5rem"    
+        size.style.fontSize = "1rem"
+      }
+      if (clicks == "2" && clicks2 == "1")
+      {
+        height.style.lineHeight = "2.7rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "2" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "2" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.3rem"
+        size.style.fontSize = "1.8rem"
+      }
+    }
+
+    if (clicks == "3")
+    {
+      document.getElementById("steps").style.display = "block"
+      document.getElementById("steps3").style.display = "block"
+      document.getElementById("step1").style.color = "black"
+      document.getElementById("step2").style.color = "black"
+      document.getElementById("step3").style.color = "#2e57c7"
+      document.getElementById("step7").style.color = "black"
+      document.getElementById("step8").style.color = "black"
+      document.getElementById("step9").style.color = "#2e57c7"
+      document.getElementById("result").innerHTML = "(2x)"
+      document.getElementById("result3").innerHTML = "(2x)"
+
+      if (clicks == "3" && clicks2 == "0")
+      {
+        height.style.lineHeight = "3rem"
+        size.style.fontSize = "1rem"    
+      }
+      if (clicks == "3" && clicks2 == "1")
+      {
+        height.style.lineHeight = "3.2rem"
+        size.style.fontSize = "1.2rem"
+      }
+      if (clicks == "3" && clicks2 == "2")
+      {
+        height.style.lineHeight = "3.5rem"
+        size.style.fontSize = "1.5rem"
+      }
+      if (clicks == "3" && clicks2 == "-1")
+      {
+        height.style.lineHeight = "3.8rem"
+        size.style.fontSize = "1.8rem"
+      }
+      
+      clicks -= 4;
+    }
+  };
+
+
+
+  function onClick2() {
+    clicks2 += 1;
+    // document.getElementById("clicks2").innerHTML = clicks2;
+    var height = document.getElementById("height");
+    var size = document.getElementById("size");
+    var size2 = document.getElementsByClassName("size2");
+
+    if (clicks2 == "0")
+    {
+      document.getElementById("steps2").style.display = "none"
+      document.getElementById("steps4").style.display = "none"
+      document.getElementById("result2").innerHTML = ""
+      document.getElementById("result4").innerHTML = ""
+      size.style.fontSize = "1rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.5rem"}
+      // size2[i].style.marginTop = "1rem"}
+
+      if (clicks2 == "0" && clicks == "0")
+      {
+        height.style.lineHeight = ""
+      }
+      if (clicks2 == "0" && clicks == "1")
+      {
+        height.style.lineHeight = "2rem"
+      }
+      if (clicks2 == "0" && clicks == "2")
+      {
+        height.style.lineHeight = "2.5rem"
+      }
+      if (clicks2 == "0" && clicks == "-1")
+      {
+        height.style.lineHeight = "3rem"
+      }
+    }
+
+    if (clicks2 == "1")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "#2e57c7"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "#2e57c7"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(m)"
+      document.getElementById("result4").innerHTML = "(m)"
+      size.style.fontSize = "1.2rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.6rem"}
+      // size2[i].style.marginTop = "1.5rem"}
+
+      if (clicks2 == "1" && clicks == "0")
+      {
+        height.style.lineHeight = "1.7rem" 
+      }
+      if (clicks2 == "1" && clicks == "1")
+      {
+        height.style.lineHeight = "2.2rem"
+      }
+      if (clicks2 == "1" && clicks == "2")
+      {
+        height.style.lineHeight = "2.7rem"
+      }
+      if (clicks2 == "1" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.2rem"
+      }
+    }
+
+    if (clicks2 == "2")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "#2e57c7"
+      document.getElementById("step6").style.color = "black"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "#2e57c7"
+      document.getElementById("step12").style.color = "black"
+      document.getElementById("result2").innerHTML = "(l)"
+      document.getElementById("result4").innerHTML = "(l)"
+      size.style.fontSize = "1.5rem"  
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "1.8rem"}
+      // size2[i].style.marginTop = "2rem"}
+
+      if (clicks2 == "2" && clicks == "0")
+      {
+        height.style.lineHeight = "2rem"   
+      }
+      if (clicks2 == "2" && clicks == "1")
+      {
+        height.style.lineHeight = "2.5rem"   
+      }
+      if (clicks2 == "2" && clicks == "2")
+      {
+        height.style.lineHeight = "3rem"   
+      }
+      if (clicks2 == "2" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.5rem"   
+      }
+    }
+
+    if (clicks2 == "3")
+    {
+      document.getElementById("steps2").style.display = "block"
+      document.getElementById("steps4").style.display = "block"
+      document.getElementById("step4").style.color = "black"
+      document.getElementById("step5").style.color = "black"
+      document.getElementById("step6").style.color = "#2e57c7"
+      document.getElementById("step10").style.color = "black"
+      document.getElementById("step11").style.color = "black"
+      document.getElementById("step12").style.color = "#2e57c7"
+      document.getElementById("result2").innerHTML = "(xl)"
+      document.getElementById("result4").innerHTML = "(xl)"
+      size.style.fontSize = "1.8rem"
+      var i;
+      for (i = 0; i < size2.length; i++) {
+      size2[i].style.fontSize = "2rem"}
+      // size2[i].style.marginTop = "2.5rem"}
+
+      if (clicks2 == "3" && clicks == "0")
+      {
+        height.style.lineHeight = "2.3rem" 
+      }
+      if (clicks2 == "3" && clicks == "1")
+      {
+        height.style.lineHeight = "2.8rem" 
+      }
+      if (clicks2 == "3" && clicks == "2")
+      {
+        height.style.lineHeight = "3.3rem"
+      }
+      if (clicks2 == "3" && clicks == "-1")
+      {
+        height.style.lineHeight = "3.8rem"   
+      }
+      
+      clicks2 -= 4; 
+    } 
+  };
+
+</script>
+
+
+<style>
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.padding{
+  padding-bottom: 20px;
+}
+
+.img-fluid{
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.font1{
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.font2{
+  font-size: 1.3rem;
+  font-weight: 300; 
+}
+
+.font4{
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+  text-align: center;
+  color: #1d809f;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  width: 100%;
+  background-color: var(--lgt-blue);
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: var(--lgt-blue);
+  border-color: var(--lgt-blue);
+}
+
+.floatb{
+  margin-left: 15px;
+  margin-top: 35px;
+  max-width: 65px;
+  font-size:1.5rem;
+}
+@media (min-width:1700px){
+  .floatb{
+    margin-top: 44px;
+}}
+
+.display2{
+  display:none;
+}
+@media (max-width:992px){.display2{display:block;}}
+
+@media (max-width:992px){.display3{display:none;}}
+
+.padding2{
+  margin-top:-1rem;
+}
+
+.padding2-2{
+  margin-top:-6rem;
+}
+
+.padding3{
+  padding-bottom: 5px;
+}
+
+.autocom-box{
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.btn-nav4{
+  color:#22b294!important;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #22b29500!important;
+} 
+.btn-nav4:hover{
+  background-color:#22b294!important;
+  color: white!important;
+  border: 1px solid #22b294!important;
+  border-radius: 5px;
+}
+
+.margin2{
+  margin-top: 0.5rem;
+}
+@media (min-width:768px){
+  .margin2{
+    margin-top: 1rem;
+}}
+@media (min-width:1700px){
+  .margin2{
+    margin-left:-100px; 
+    margin-right:-100px;
+    margin-top: 3rem;
+}}
+
+@media (max-width:768px){.post-title {font-size:1.7rem;}}
+
+.line-icon{
+  font-size: 1.3rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 0.7rem;
+  opacity: 0.8;
+  color: white;
+}
+
+.box{
+  background-color: #22252a;
+  width: 280px;
+  border-radius: 3px;
+}
+.box:hover{background-color: #f7f7f723;  cursor: pointer;}
+
+.box2{
+  border: 1px solid #6c747d;
+  border-radius: 3px;
+  background-color: #22252a;
+}
+
+.box3{
+  border-right: 1px solid #6c747d;
+}
+
+.steps{
+  margin-top: -0.6rem;
+  margin-bottom: -0.3rem;
+  display: none;
+  opacity: 0.8;
+}
+
+.legibility{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.legibility2{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+}
+
+.break{
+  padding-bottom: 0.7rem;
+}
+
+.minbreak{
+  margin-bottom: -1px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 8rem;
+  margin-bottom: 1.2rem;
+}
+
+.space{
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+
+/* dark theme */
+.navbar{
+  background-color: #22252a;
+}
+
+.btn-nav{
+  color: #bfbfbf!important;
+}
+.btn-nav:hover{
+  color: white!important;
+}
+
+.btn-nav2{
+  color: white!important;
+}
+
+.btn-nav3{
+  margin-top: 6%;
+}
+@media (max-width:992px){
+.btn-nav3{
+  margin-top: 2%;
+}}
+
+.bgdark{
+  background-color: #1f2126;
+}
+
+.email-box{
+  background-color: rgba(0, 0, 0, 0.6);
+  color:#f9f8fa!important;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.email-box:focus{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline:none;
+}
+
+.footer{
+  background-color: #1f2126;
+}
+
+.color3{
+  color: #bfbfbf!important;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.underline{
+  border-top: 1px solid #6c747d;
+}
+
+.card-body{
+  background-color: #22252a;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.card{
+  border-color: #6c747d;
+}
+
+.btn-show3{
+  border-color:#bfbfbf!important; 
+  background-color:#22252a!important;
+} 
+
+.custom3{
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.4);
+}
+ 
+.dark2:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+.dark3{
+  padding-right: 2rem;
+}
+.dark3:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+body p{color: #f9f8fa;}
+
+</style>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body id="page-top" class="bgdark">
+
+  <!-- Navigation -->
+  <br><br>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="indexdark.html"><img src="img2/logos/logoikigaidark.png" alt=""/></a>
+      <button class="navbar-toggler text-white navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item upper">
+            <a class="nav-link btn-nav" href="indexdark.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="traveldark.html">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="immigrationdark.html">Immigration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav2" href="articlesdark.html">Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.booking.com/" target="_blank" rel="noopener noreferrer">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav" href="https://www.skyscanner.com.br/?currency=EUR&previousCultureSource=COOKIE&redirectedFrom=www.skyscanner.com" target="_blank" rel="noopener noreferrer">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-nav3 js-scroll-trigger" href="#join">Subscribe</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  
+  
+  <!-- Page Content -->
+  <section class="page-section">
+  
+  <a class="btn btn-show3 btn-sm floatb" href="articlesdark.html">&#8592;</a>
+  
+  <br>
+  <div class="container">
+
+    <div class="row margin2">
+
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+
+        <!-- Title -->
+        <h2 class="mt-4 post-title color5">Family reunion visa</h2>
+        <hr class="underline">
+        <!-- Date/Time -->
+        <p>Published on October 12, 2021</p>
+        <hr class="underline">
+      </div>
+
+        <!--content widget-->
+        <div class="display2 container">
+          <div class="row justify-content-center"> 
+            <div class="col-11 col-lg-4">                  
+              <div class="padding2">
+                <div class="card my-4">
+                  <h5 style="text-align:left" class="card-header font2">Content</h5>
+                    <div class="card-body autocom-box">
+                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="color5 padding3">Who can request this type of visa</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="color5 padding3">Length & restrictions</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="color5 minbreak">Required documents</h6></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--legibility widget-->
+                <div class="legibility2">
+                  <tr>
+                    <table class="row justify-content-center box2">
+                      <td class="box box3" style="text-align:center" onclick="onClick()">
+                            <div>
+                              <i class="fas fa-align-left line-icon"></i>
+                            </div>
+                            <div class="noselect text-white">
+                              <h6 class="noselect">Line Hight <span id="result"></span></h6>
+                              <div class="steps" id="steps">
+                                <span id="step1">&#8213;</span>
+                                <span id="step2">&#8213;</span>
+                                <span id="step3">&#8213;</span>
+                              </div>
+                            </div>
+                      </td>
+                      <td class="box" style="text-align:center" onclick="onClick2()">
+                            <div>
+                              <i class="fas fa-text-height line-icon"></i>
+                            </div>
+                            <div class="noselect text-white">
+                              <h6>Text Size <span id="result2"></span></h6>
+                              <div class="steps" id="steps2">
+                                <span id="step4">&#8213;</span>
+                                <span id="step5">&#8213;</span>
+                                <span id="step6">&#8213;</span>
+                              </div>
+                            </div>
+                      </td>
+                    </table>   
+                  </tr>
+                </div>
+
+              </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-lg-8" id="height">
+          <div id="size">
+
+          <!-- Post Content -->
+          <p class="space">To request residence in Brazil it is necessary to fit into the hypotheses provided for by the Brazilian government. One of the simplest ways to get permanence in Brazil is by family reunion, either through the visa or the residence permit. This modality is a right to both the resident migrant and the Brazilian who has foreign ties.</p>
+          <br>
+
+          <p style="text-align:left" class="font1 size2" id="1">Who can request this type of visa</p>
+          <hr class="underline">
+          <p>The family reunion may be requested for certain family members who are financially dependent on the 'caller', that is, the resident or Brazilian migrant.
+
+            <p>The following may require a visa based on family reunion:</p>
+            
+            <p>– The spouse or companion. In this case they are considered people who have a marriage or stable union with a Brazilian or a migrant resident;</p>
+            
+            <p>– Child of a Brazilian or immigrant beneficiary of a residence permit;</p>
+                        
+            <p>– Foreigner who has a Brazilian child;</p>
+                                    
+            <p>– Ascendants, descendants to the second degree or siblings of a Brazilian or immigrant beneficiary of a residence permit;</p>
+            
+            <p>– Any migrant that has a Brazilian under its tutelage, curate or guard.</p>
+          
+            <p class="space">Note that the immigrant who has residency in Brazil based on family reunion, can not call another migrant by family reunion. For example, an immigrant that has recidency based on family reunion through marriage with a Brazilian, can not be the person with whom another immigrant can enter into a family reunion visa.</p>
+          <br>
+
+          <p style="text-align:left" class="font1 size2" id="2">Length & restrictions</p>
+          <hr class="underline">
+          <p>The temporary visa for family reunion will be valid for one year. The immigrant who is a holder of a temporary visa through family reunion must register with the Federal Police within 90 days after their entry in the national territory, at which the validity of the residence period will be noted.</p>
+          <p>Those who are already in the country and wish to formalize the migratory regularization on the basis of family reunion, may submit an application for a residence permit at one of the units of the Federal Police, presenting the documents required by the ordinance. Validity is usually 9 years once residency is granted, but it depends on what kind of family reunion was made. In general, through family reunion with a Brazilian the duration is permanent, while for the family reunion with an immmigrant beneficiary of a residence permit, the duration is the same of their residence validity.</p>
+          <p class="space">It is important to note that although the residence is permanent, it is necessary to renew the document based on its validity indicated on the National Migration Registration Card (CRNM). The immigrant who receives a residence permit based on family reunion may engage in any activity in the country, including paid work, under the current legislation.</p>
+          <br>
+
+          <p style="text-align:left" class="font1 size2" id="3">Required documents</p>
+          <hr class="underline">
+          <p>Documents required from the Brazilian citizen or Brazilian permanent resident (dependant):</p>
+
+            <p>1 – Copy of the Brazilian ID or the Brazilian permanent resident card of the head of the family in Brazil; when the original document is not shown, a copy of the original document must be legalized by a Public Notary in Brazil;</p>
+            
+            <p>If the dependant is Brazilian, the required document is the “Carteira de Identidade Civil” – RG or valid passport.</p>
+            <p>If the dependant is a resident alien, the required document is the “Carteira de Registro Nacional Migratória" (CRNM).</p>
+        
+            <p>2 – Term of responsibility: statement assuming responsibility for the applicant’s maintenance in Brazil.</p>
+            
+            <p>Documents required from the applicant:</p>
+            
+            <p>3 – Passports presented must be original, valid for at least six months prior to expiration date. The passport must have at least two blank visa pages;</p>
+            
+            <p>4 – One recent 3,5 cm x 4,5 cm (pasfoto) photograph, front view;</p>
+            
+            <p>5  – Visa application form;</p>
+                        
+            <p>6 - Certificate/declaration of marriage or stable union/equivalent document:</p>
+            
+            <p>Marriage registration issued by a Brazilian Consulate or by a notary public in Brazil. The international marriage certificate must be either apostilled by the competent authorities of the issuing country or legalized by the Brazilian Consulate located in the country that issued them.</p>
+             
+            <p>Stable union contract: issued by a Brazilian Public Notary (in Brazil) or an international model bearing an “Apostille”.</p>
+            
+            <p>7 - Certificate of good behavior (international model) issued by the Ministry of Justice certifying absence of criminal record – only valid within 90 days after issuance, apostilled;</p>
+            
+            <p>8 - Birth Certificate.</p>
+          
+            
+          </div>
+        </div>
+      
+
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-11 col-lg-4 justify-content-center">
+
+
+        <!-- content Widget -->
+        <div class="sticky">
+        <div class="padding2-2">
+          <div class="display3 card my-4">
+            <h5 style="text-align:left" class="card-header font2">Content</h5>
+              <div class="card-body">
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="color5 padding3">Who can request this type of visa</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="color5 padding3">Length & restrictions</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="color5 minbreak">Required documents</h6></a>
+              </div>
+          </div>
+        </div>
+
+        <!-- legibility Widget -->
+        <div class="display3 legibility">
+          <tr>
+            <table class="row justify-content-center box2">
+              <td class="box box3" style="text-align:center" onclick="onClick()">
+                <div>
+                  <i class="fas fa-align-left line-icon"></i>
+                </div>
+                <div class="noselect text-white">
+                  <h6>Line Hight <span id="result3"></span></h6>
+                  <div class="steps" id="steps3">
+                    <span id="step7">&#8213;</span>
+                    <span id="step8">&#8213;</span>
+                    <span id="step9">&#8213;</span>
+                  </div>
+                </div>
+              </td>
+              <td class="box" style="text-align:center" onclick="onClick2()">
+                <div>
+                  <i class="fas fa-text-height line-icon"></i>
+                </div>
+                <div class="noselect text-white">
+                  <h6>Text Size <span id="result4"></span></h6>
+                  <div class="steps" id="steps4">
+                    <span id="step10">&#8213;</span>
+                    <span id="step11">&#8213;</span>
+                    <span id="step12">&#8213;</span>
+                  </div>
+                </div>
+              </td>
+            </table>   
+          </tr>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  </section>
+  
+        
+  
+  <!-- Call to Action -->
+  <section class="call-to-action text-center" id="join">
+    <!-- <div class="overlay"></div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-10 mx-auto">
+          <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
+        </div>
+        <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          <form>
+            <div class="form-row">
+              <div class="col-12 col-md-8 mb-2 mb-md-0">
+                <input type="email" class="form-control email-box font4" placeholder="Enter your email...">
+              </div>
+              <div class="col-12 col-md-4">
+                <button type="submit" class="btn btn-block btn-show custom3 font4">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="col-lg-6 h-100 text-center my-auto display2">
+      <ul class="list-inline mb-2">
+        <li class="list-inline-item spacing">
+          <a class="color3 font4 spacing dark2" href="post5.html">Light Mode <i class="fas fa-sun"></i></a>
+        </li>
+        <li class="list-inline-item spacing">
+          <a class="weight2 color3 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2"> 
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="aboutdark.html">About</a>
+            </li>
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="contactdark.html">Contact</a>
+            </li>
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="termsdark.html">Terms of Use</a>
+            </li> 
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="privacydark.html">Privacy Policy</a>
+            </li>
+          </ul>
+          <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
+        </div>
+   
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a class="color3 font4 dark3" href="post5.html">Light Mode <i class="fas fa-sun"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
+
+<!-- Bootstrap core JS-->
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Contact form JS-->
+<!--<script src="mail/jqBootstrapValidation.js"></script>-->
+<!--<script src="mail/contact_me.js"></script>-->
+<!-- Core theme JS-->
+<!--<script src="js/scripts.js"></script>-->
+
+</body>
+
+</html>
