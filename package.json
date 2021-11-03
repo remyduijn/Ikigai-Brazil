@@ -3,7 +3,7 @@
   "name": "ikigaibrazil-travel-page",
   "version": "1.0.0",
   "scripts": {
-    "build": "node build/build.js",
+    "build": "npm run build",
   },
   "description": "A travel & immigration blog built with VScode",
   "keywords": [
