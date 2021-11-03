@@ -1,11 +1,11 @@
 {
-    "title": "Landing Page",
-    "name": "startbootstrap-landing-page",
+    "title": "Ikigai Brazil",
+    "name": "ikigaibrazil-travel-page",
     "version": "5.0.9",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
     },
-    "description": "An HTML landing page template built with Bootstrap",
+    "description": "A travel & immigration blog built with VScode",
     "keywords": [
         "css",
         "sass",
@@ -14,7 +14,7 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/theme/landing-page",
+    "homepage": "https://ikigaibrazil.com/index",
     "bugs": {
         "url": "https://github.com/StartBootstrap/startbootstrap-landing-page/issues",
         "email": "feedback@startbootstrap.com"
@@ -26,7 +26,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-landing-page.git"
+        "url": "https://github.com/remyduijn/Ikigai-Brazil"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.15.1",
