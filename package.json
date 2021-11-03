@@ -1,10 +1,9 @@
 {
   "title": "npm",
   "name": "ikigaibrazil-travel-page",
-  "version": "5.0.9",
+  "version": "1.0.0",
   "scripts": {
-    "build": "node app.js",
-    "test": "standard"
+    "test": ""
   },
   "description": "A travel & immigration blog built with VScode",
   "keywords": [
