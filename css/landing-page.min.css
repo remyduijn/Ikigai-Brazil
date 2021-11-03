@@ -383,7 +383,7 @@ footer.footer{padding-top:4rem;padding-bottom:4rem;font-size:15px;position: rela
 
 .btn-show{background-color:#169c81!important; border-color:#169c81!important;color:#fff!important;border-radius: 5px;} .btn-show:hover{background-color:#13866f!important;border-color:#13866f!important} .btn-show:focus{background-color:#148F77!important; border-color:#148F77!important; outline:none;box-shadow: 0px 2px 4px 0 rgba(0,0,0,.8);}
 .btn-show2{border-radius: 5px} .btn-show2:hover{border-color:#6c747d!important} 
-.btn-show3{background-color:white!important; border-color:#f9f9fb!important;color:#909494;border-radius: 5px;padding:0} .btn-show3:hover{background-color:#22b294!important;color:white!important;border-color:#22b294!important} 
+.btn-show3{background-color:white!important; border-color:#f9f9fb!important;border-radius: 5px;padding:0} .btn-show3:hover{background-color:#22b294!important;color:white!important;border-color:#22b294!important} 
 .btn-show3:active{box-shadow:0 0 0 2px rgba(17, 120, 100, 0.4);} .btn-show3:focus{box-shadow:0 0 0 2px rgba(17, 120, 100, 0.4);}
 
 .btn-nav{color:#7f7f7f!important;} .btn-nav:hover{color:#424040!important;} 
