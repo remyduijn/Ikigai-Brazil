@@ -398,6 +398,17 @@ footer.footer{padding-top:4rem;padding-bottom:4rem;font-size:15px;position: rela
 .email-box{background-color: rgba(255, 255, 255, 0.8);border: 1px solid rgba(255, 255, 255, 0.8);}
 .email-box:focus{background-color: rgba(255, 255, 255, 0.8);box-shadow: 0 0 10px 1px rgba(0,0,0,0.6);border: 1px solid rgba(255, 255, 255, 0.8);outline:none}
 
+.share{
+  /* padding-left: 5px; */
+  padding-top: 1rem;
+  text-align:left;
+  color:#dddddd;
+  font-size: small;
+}
+@media (max-width:768px){.share{
+  padding-top: 1.5rem;
+  text-align: center;
+}}
 
 
 /* Footer */
