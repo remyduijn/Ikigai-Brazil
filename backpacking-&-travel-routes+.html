@@ -427,27 +427,11 @@
   margin-bottom: 1rem;
 }
 
-.color6{
-  color: #2089ac;
-}
-
-.color5{
-  color:#f9f8fa;
-}
-
-.custom{
-  text-shadow: black 0px 0px 10px;
-}
-
-.custom2{
-  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.8);
-}
-
 .font1{
   font-size: 1.5rem;
   font-weight: 100;
 }
- 
+
 .font2{
   font-size: 1.3rem;
   font-weight: 300; 
@@ -488,11 +472,6 @@
   .floatb{
     margin-top: 44px;
 }}
-
-.card-body{
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 3px;
-}
 
 .display2{
   display:none;
@@ -564,23 +543,24 @@
   padding-bottom: 1rem;
   padding-top: 0.7rem;
   opacity: 0.8;
+  color: white;
 }
 
 .box{
-  background-color: white;
+  background-color: #22252a;
   width: 280px;
   border-radius: 3px;
 }
-.box:hover{background-color: #f7f7f7;  cursor: pointer;}
+.box:hover{background-color: #f7f7f723;  cursor: pointer;}
 
 .box2{
-  border: 1px solid #e0e0e0;
+  border: 1px solid #6c747d;
   border-radius: 3px;
-  background-color: white;
+  background-color: #22252a;
 }
 
 .box3{
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #6c747d;
 }
 
 .steps{
@@ -635,10 +615,6 @@ div.sticky {
   margin-bottom: 1.5rem;
 }
 
-.space2{
-  margin-bottom: 2rem;
-}
-
 .map-responsive{
   padding-bottom:0%;
   position:relative;
@@ -654,6 +630,104 @@ div.sticky {
   border: 1px solid #e0dcdc;
   border-radius:5px;      
 }
+
+
+
+
+
+
+
+/* dark theme */
+.navbar{
+  background-color: #22252a;
+}
+
+.btn-nav{
+  color: #bfbfbf!important;
+}
+.btn-nav:hover{
+  color: white!important;
+}
+
+.btn-nav2{
+  color: white!important;
+}
+
+.btn-nav3{
+  margin-top: 6%;
+}
+@media (max-width:992px){
+.btn-nav3{
+  margin-top: 2%;
+}}
+
+.bgdark{
+  background-color: #1f2126;
+}
+
+.email-box{
+  background-color: rgba(0, 0, 0, 0.6);
+  color:#f9f8fa!important;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.email-box:focus{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline:none;
+}
+
+.footer{
+  background-color: #1f2126;
+}
+
+.color3{
+  color: #bfbfbf!important;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.underline{
+  border-top: 1px solid #6c747d;
+}
+
+.card-body{
+  background-color: #22252a;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.card{
+  border-color: #6c747d;
+}
+
+.btn-show3{
+  border-color:#22252a!important; 
+  background-color:#22252a!important;
+} 
+
+.custom3{
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.4);
+}
+ 
+.dark2:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+.dark3{
+  padding-right: 2rem;
+}
+.dark3:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+body p{color: #f9f8fa;}
+
 </style>
 
 </head>
@@ -667,30 +741,30 @@ div.sticky {
 
 
 
-<body id="page-top">
+<body id="page-top" class="bgdark">
 
   <!-- Navigation -->
   <br><br>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img2/logos/logoikigai.png" alt=""/></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="indexdark.html"><img src="img2/logos/logoikigaidark.png" alt=""/></a>
+      <button class="navbar-toggler text-white navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item upper">
-            <a class="nav-link btn-nav" href="index.html">Home</a>
+            <a class="nav-link btn-nav" href="indexdark.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn-nav" href="travel.html">Travel</a>
+            <a class="nav-link btn-nav" href="traveldark.html">Travel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn-nav" href="immigration.html">Immigration</a>
+            <a class="nav-link btn-nav" href="immigrationdark.html">Immigration</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn-nav2" href="articles.html">Articles</a>
+            <a class="nav-link btn-nav2" href="articlesdark.html">Articles</a>
           </li>
           <li class="nav-item">
             <a class="nav-link btn-nav" href="https://www.hotelscombined.com/?a_aid=240863" target="_blank" rel="noopener noreferrer">Hotels</a>
@@ -709,9 +783,9 @@ div.sticky {
   
   
   <!-- Page Content -->
-  <section class="page-section bg-light">
+  <section class="page-section">
   
-  <a class="btn btn-show3 btn-sm floatb" href="articles.html"><i class="fas fa-angle-double-left"></i></a>
+  <a class="btn btn-show3 btn-sm floatb" href="articlesdark.html"><i class="fas fa-angle-double-left"></i></a>
   
   <br>
   <div class="container">
@@ -722,11 +796,11 @@ div.sticky {
       <div class="col-lg-8">
 
         <!-- Title -->
-        <h2 class="mt-4 post-title">Backpacking / travel routes</h2>
-        <hr>
+        <h2 class="mt-4 post-title color5">Backpacking / travel routes</h2>
+        <hr class="underline">
         <!-- Date/Time -->
         <p>Published on August 15, 2021</p>
-        <hr>
+        <hr class="underline">
       </div>
 
         <!--content widget-->
@@ -737,11 +811,11 @@ div.sticky {
                 <div class="card my-4">
                   <h5 style="text-align:left" class="card-header font2">Content</h5>
                     <div class="card-body autocom-box">
-                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Rota das emoções</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Historic cities of Minas Gerais</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">Rio Grande do Sul & Santa Catarina</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Bahia & Espírito Santo</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted minbreak">Manaus to Belém by boat</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="color5 padding3">Rota das emoções</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="color5 padding3">Historic cities of Minas Gerais</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="color5 padding3">Rio Grande do Sul & Santa Catarina</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="color5 padding3">Bahia & Espírito Santo</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="color5 minbreak">Manaus to Belém by boat</h6></a>
                     </div>
                   </div>
                 </div>
@@ -754,7 +828,7 @@ div.sticky {
                             <div>
                               <i class="fas fa-align-left line-icon"></i>
                             </div>
-                            <div class="noselect">
+                            <div class="noselect text-white">
                               <h6>Line Hight <span id="result"></span></h6>
                               <div class="steps" id="steps">
                                 <span id="step1">&#8213;</span>
@@ -767,7 +841,7 @@ div.sticky {
                             <div>
                               <i class="fas fa-text-height line-icon"></i>
                             </div>
-                            <div class="noselect">
+                            <div class="noselect text-white">
                               <h6>Text Size <span id="result2"></span></h6>
                               <div class="steps" id="steps2">
                                 <span id="step4">&#8213;</span>
@@ -784,7 +858,7 @@ div.sticky {
           </div>
         </div>
 
-        
+         
 
         <div class="col-lg-8" id="height">
           <div id="size">
@@ -795,7 +869,7 @@ div.sticky {
           <br>
                 
           <p style="text-align:left" class="font1 size2" id="1">Rota das emoções</p>
-          <hr>
+          <hr class="underline">
           <p>The route of thrill (rota das emoções) received its name thanks to the roads to be travelled – some parts can only be done in 4×4 vehicles and with authorized guides due to the conditions of some stretches, which are not paved and some go through private properties.</p>
           <p>The difficult access makes the trip even more special, at least for those who enjoy adventure, because what you'll find is very well preserved natural landscapes.</p>
          
@@ -830,7 +904,7 @@ div.sticky {
 
 
           <p style="text-align:left" class="font1 size2" id="2">Historic cities of Minas Gerais</p>
-          <hr>
+          <hr class="underline">
           <p>The previous route might be a little complex, unless it is done through a travel agency, but the next travel route is much simpler. And your best bet, especially if you are not travelling alone, is to rent a car. On this route you don't need to buy a ticket for multiple destinations – buy a roundtrip to Belo Horizonte. You will travel around 600 kilometers and return to the state's capital.</p>
 
           <p style="text-align:left" class="font5 size3"><u>Stops on this route</u></p>
@@ -866,7 +940,7 @@ div.sticky {
 
 
           <p style="text-align:left" class="font1 size2" id="3">Rio Grande do Sul & Santa Catarina</p>
-          <hr>
+          <hr class="underline">
           <p>During this trip you will get to know the two states of Rio Grande do Sul and Santa Catarina, in the south of Brazil. This time a multi-destinations passage is advised, with arrival in Porto Alegre and return from Florianópolis (or the other way around). Therefore, it only makes sense to rent a car for specific stretches, but for the whole trip the best means of transport would be by bus, or a privately owned car.</p>
 
           <p style="text-align:left" class="font5 size3"><u>Stops on this route</u></p>
@@ -901,7 +975,7 @@ div.sticky {
 
 
           <p style="text-align:left" class="font1 size2" id="4">Bahia & Espírito Santo</p>
-          <hr>
+          <hr class="underline">
           <p>On this trip you will get to know some of the most famous beaches in Bahia, but you will also be able to unravel a very beautiful state, still little known by Brazilians themselves: Espírito Santo.</p>
           <p>In the region of the Costa do Descobrimento (Discovery Coast), in the south of Bahia, it is possible to learn about the origins of the country, in addition to the incredible natural beauty that will enchant those who visit for the first time.</p>
 
@@ -936,7 +1010,7 @@ div.sticky {
 
 
           <p style="text-align:left" class="font1 size2" id="5">Manaus to Belém by boat</p>
-          <hr>
+          <hr class="underline">
           <p>Certainly the north is the most exotic region to discover in Brazil. This area houses most of the Amazon rainforest, a region rich in natural beauty, history, art and gastronomy.
           <p>This route is popular with foreigners who wish to explore the world's largest tropical rainforest. The two largest cities in the region – Belém and Manaus – are port cities and receive dozens of vessels every day. Among them, boats that offer transfers between the municipalities.</p>
 
@@ -976,11 +1050,11 @@ div.sticky {
           <div class="display3 card my-4">
             <h5 style="text-align:left" class="card-header font2">Content</h5>
               <div class="card-body autocom-box">
-                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Rota das emoções</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Historic cities of Minas Gerais</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">Rio Grande do Sul & Santa Catarina</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">Bahia & Espírito Santo</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted minbreak">Manaus to Belém by boat</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="color5 padding3">Rota das emoções</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="color5 padding3">Historic cities of Minas Gerais</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="color5 padding3">Rio Grande do Sul & Santa Catarina</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="color5 padding3">Bahia & Espírito Santo</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="color5 minbreak">Manaus to Belém by boat</h6></a>
               </div>
           </div>
         </div>
@@ -993,7 +1067,7 @@ div.sticky {
                 <div>
                   <i class="fas fa-align-left line-icon"></i>
                 </div>
-                <div class="noselect">
+                <div class="noselect text-white">
                   <h6>Line Hight <span id="result3"></span></h6>
                   <div class="steps" id="steps3">
                     <span id="step7">&#8213;</span>
@@ -1006,7 +1080,7 @@ div.sticky {
                 <div>
                   <i class="fas fa-text-height line-icon"></i>
                 </div>
-                <div class="noselect">
+                <div class="noselect text-white">
                   <h6>Text Size <span id="result4"></span></h6>
                   <div class="steps" id="steps4">
                     <span id="step10">&#8213;</span>
@@ -1029,8 +1103,8 @@ div.sticky {
   
   <!-- Call to Action -->
   <section class="call-to-action text-center" id="join">
-    <form action="https://formsubmit.co/remy.duijn@gmail.com" method="POST">
-      <div class="container">
+      <form action="https://formsubmit.co/remy.duijn@gmail.com" method="POST">
+        <div class="container">
         <div class="row">
           <div class="col-xl-10 mx-auto">
             <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
@@ -1039,10 +1113,10 @@ div.sticky {
             <form>
               <div class="form-row">
                 <div class="col-12 col-md-8 mb-2 mb-md-0">
-                  <input type="email" name="email" class="form-control email-box custom2 font4" placeholder="Email address" required>
+                  <input type="email" name="email" class="form-control email-box font4" placeholder="Email address" required>
                 </div>
                 <div class="col-12 col-md-4">
-                  <button type="submit" class="btn btn-block btn-show custom2 font4">Subscribe</button>
+                  <button type="submit" class="btn btn-block btn-show custom3 font4 color5">Subscribe</button>
                 </div>
               </div>
               <p class="share">*We do not share your information</p>
@@ -1050,42 +1124,41 @@ div.sticky {
           </div>
         </div>
       </div>
-    </form>
-  </section>
+    </section>
 
 
 
-  <!-- Footer -->
-  <footer class="footer bg-light">
+    <!-- Footer -->
+    <footer class="footer">
     <div class="col-lg-6 h-100 text-center my-auto display2">
       <ul class="list-inline mb-2">
         <li class="list-inline-item spacing">
-          <a class="color6 font4 spacing dark2" href="post11dark.html">Dark Mode <i class="fas fa-moon"></i></a>
+          <a class="color3 font4 spacing dark2" href="backpacking-&-travel-routes.html">Light Mode <i class="fas fa-sun"></i></a>
         </li>
-        <li class="list-inline-item spacing"> 
-          <a class="weight2 color6 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+        <li class="list-inline-item spacing">
+          <a class="weight2 color3 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
         </li>
       </ul>
     </div>
-
+  
     <div class="container">
       <div class="row">
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="about.html">About</a>
+              <a class="weight2 color3 font4" href="aboutdark.html">About</a>
             </li>
-            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item text-muted">&sdot;</li>
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="contact.html">Contact</a>
+              <a class="weight2 color3 font4" href="contactdark.html">Contact</a>
             </li>
-            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item text-muted">&sdot;</li>
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="terms.html">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
+              <a class="weight2 color3 font4" href="termsdark.html">Terms of Use</a>
+            </li> 
+            <li class="list-inline-item text-muted">&sdot;</li>
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="privacy.html">Privacy Policy</a>
+              <a class="weight2 color3 font4" href="privacydark.html">Privacy Policy</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
@@ -1094,10 +1167,10 @@ div.sticky {
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="weight2 color6 font4 dark" href="post11dark.html">Dark Mode <i class="fas fa-moon"></i></a>
+              <a class="color3 font4 dark3" href="backpacking-&-travel-routes.html">Light Mode <i class="fas fa-sun"></i></a>
             </li>
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+              <a class="weight2 color3 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
             </li>
           </ul>
         </div>

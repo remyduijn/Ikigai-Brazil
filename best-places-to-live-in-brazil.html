@@ -12,7 +12,7 @@
 
   <!-- Google adsense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1423073810053487" crossorigin="anonymous"></script>
-
+ 
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -49,6 +49,7 @@
 
   function onClick() {
     clicks += 1;
+    // document.getElementById("clicks").innerHTML = clicks;
     var height = document.getElementById("height");
     var size = document.getElementById("size");
 
@@ -193,6 +194,7 @@
 
   function onClick2() {
     clicks2 += 1;
+    // document.getElementById("clicks2").innerHTML = clicks2;
     var height = document.getElementById("height");
     var size = document.getElementById("size");
     var size2 = document.getElementsByClassName("size2");
@@ -386,6 +388,11 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.font5{
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
 .btn {
   text-align: center;
   color: #22b294;
@@ -541,6 +548,10 @@ div.sticky {
 .space{
   margin-bottom: 1.5rem;
 }
+
+.space2{
+  margin-bottom: 2rem;
+}
 </style>
 
 </head>
@@ -609,10 +620,10 @@ div.sticky {
       <div class="col-lg-8">
 
         <!-- Title -->
-        <h2 class="mt-4 post-title">Brazil's top-10 tourist destinations</h2>
+        <h2 class="mt-4 post-title">Best places to live in Brazil</h2>
         <hr>
         <!-- Date/Time -->
-        <p>Published on October 10, 2021</p>
+        <p>Published on October 19, 2021</p>
         <hr>
       </div>
 
@@ -624,20 +635,14 @@ div.sticky {
                 <div class="card my-4">
                   <h5 style="text-align:left" class="card-header font2">Content</h5>
                     <div class="card-body autocom-box">
-                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">#1 Lençóis</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">#2 Gramado</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">#3 Jalapão</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">#4 Fernando de Noronha</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted padding3">#5 João Pessoa</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="text-muted padding3">#6 Tiradentes</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="text-muted padding3">#7 São Miguel do Gostoso</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="text-muted padding3">#8 Alter do Chão</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="text-muted padding3">#9 Bento Gonçalves</h6></a>
-                      <a class="btn-nav js-scroll-trigger" href="#10"><h6 style="text-align:left" class="text-muted minbreak">#10 São Miguel dos Milagres</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Human development ranking per state</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Brazil's best capital cities</h6></a>
+                      <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted minbreak">Brazil's most modern cities</h6></a>
                     </div>
                   </div>
                 </div>
-                
+
+                <!--legibility widget-->
                 <div class="legibility2">
                   <tr>
                     <table class="row justify-content-center box2">
@@ -646,11 +651,11 @@ div.sticky {
                               <i class="fas fa-align-left line-icon"></i>
                             </div>
                             <div class="noselect">
-                              <h6 class="noselect">Line Hight <span id="result"></span></h6>
+                              <h6>Line Hight <span id="result"></span></h6>
                               <div class="steps" id="steps">
-                                <span id="step1" class="step-1">&#8213;</span>
-                                <span id="step2" class="step-2">&#8213;</span>
-                                <span id="step3" class="step-3">&#8213;</span>
+                                <span id="step1">&#8213;</span>
+                                <span id="step2">&#8213;</span>
+                                <span id="step3">&#8213;</span>
                               </div>
                             </div>
                       </td>
@@ -661,9 +666,9 @@ div.sticky {
                             <div class="noselect">
                               <h6>Text Size <span id="result2"></span></h6>
                               <div class="steps" id="steps2">
-                                <span id="step4" class="step-1">&#8213;</span>
-                                <span id="step5" class="step-2">&#8213;</span>
-                                <span id="step6" class="step-3">&#8213;</span>
+                                <span id="step4">&#8213;</span>
+                                <span id="step5">&#8213;</span>
+                                <span id="step6">&#8213;</span>
                               </div>
                             </div>
                       </td>
@@ -681,75 +686,48 @@ div.sticky {
           <div id="size">
 
           <!-- Post Content -->
-          <p>Electing the best destinations in Brazil is not a simple task, especially when there are so many paradises to choose from. It would be unfair if we made that ranking ourselves. Therefore, in the face of such responsibility, the results were computed based on the votes of more than 25.000 travellers, considering trips carried out by them in 2019 or the previous year.</p>
-          <p class="space">And who won the prize of best Brazilian destination was the city of Lençóis in Bahia, the main base for those who want to get to know the Chapada Diamantina national park. Lençóis has taken the first place from Gramado (RS) – winner of the award in the previous year. The city ended with a 9,10 grade on average, that was based on the cost-benefit, attractions, gastronomy, hospitality and security of the destination. Gramado continued in the ranking, ending second with a 8,74 on average. Jalapão, another Brazilian paradise, led the third place among the best national destinations, with a 8,68 of average.</p>
+          <p class="space">Dealing with changes is a task that requires the analysis of several factors, especially when moving to a new country. Most likely the cost of living will be one of the conditions you will take into account before making any decision, but also factors such as work, education, healthcare, safety and transportation are certainly a priority. Another point that can contribute at the time of deciding is to know which are the best cities to live in Brazil.</p>
           <br>
-
-          <p style="text-align:left" class="font1 size2">Top-10 destinations</p>
-          <hr class="break">
-          <img class="img-fluid rounded" src="img/posts/top10.jpg" alt="">
+                
+          <p style="text-align:left" class="font1 size2" id="1">Human development ranking per state</p>
+          <hr>
+          <p>A ranking elaborated by <a class="btn-nav4" href="http://www.atlasbrasil.org.br/" target="_blank" rel="noopener noreferrer"><u>Atlas Brasil</u></a> (organization that maps human development in Brazil), based on census data from 1991 to 2017, is a good source of research for you to know which are the best Brazilian states to live. The study allows to consult the degree of human development index (HDI) by countries and municipalities.
+          <p>Brazil, for example, has an HDI of 0,765 (based on 2020 data), occupying the 84th position in the world ranking. With the indicator ranging from 0.000 to 1.000, it is possible to draw some parameters based on the analysis of three other indicators:</p>
+          <p>– Income (standard of living)<br>   
+            – Education (access to knowledge);<br>
+            – Longevity (living a long and healthy life);</p>
+          <p class="space">The following table shows the ranking of the Brazilian states according to the Municipal Human Development Index (IDHM), which is composed of the three indicators of human development. The closer the value of IDHM is to 1, the greater the human development in the locality.</p>
+          <img class="img-fluid rounded space2" src="img/posts/atlas.jpg" alt="">
+          <br><br> 
+            
+          <p style="text-align:left" class="font1 size2" id="2">Brazil's best capital cities</p>
+          <hr>
+          <p>In the survey of Macroplan Consulting, the <a class="btn-nav4" href="https://www.desafiosdosmunicipios.com.br/ranking_inicio.php" target="_blank" rel="noopener noreferrer"><u>Municipal Management Challenge (DGM)</u></a> measures the performance of four essential areas for the quality of life of the population:
+        
+          <p>– Education;<br>
+             – Health;<br>
+             – Safety;<br>
+             – Sanitation (which includes sustainability)</p>
+            
+          <p>According to Macroplan, the most recent data evaluated the 100 largest municipalities in the country in terms of population (more than 273 thousand inhabitants), which responds to about half of the Brazilian gross domestic product (GDP).</p>
+          <p class="space">The ranking listed below is according to the data collected by the DGM on some of the major Brazilian capitals that you can consider living, based on the IDGM (DGM index) for 2021.</p>
+          <img class="img-fluid rounded space2" src="img/posts/municipal.jpg" alt="" width="70%">
           <br><br>
-
-          <p style="text-align:left" class="font1 size2" id="1">1. Lençóis</p>
+                        
+          <p style="text-align:left" class="font1 size2" id="3">Brazil's most modern cities</p>
           <hr>
-          <p>Lençóis, in Bahia, is the base town for those who embark on a journey towards Chapada Diamantina. There are the numerous natural attractions of the region that led the city to win the title of best national destination. The city has received the highest appreciation in the attractions and hospitality areas, as well as a great highlight in gastronomy. Not to mention that Lençóis was very well evaluated regarding the cost benefit and security.</p>
-          <p class="space">Lençóis is just the starting point for exploring all the beauty of Chapada Diamantina, which includes other destinations like Mucugê, Vale do Capão and the charming Igatú. Undoubtedly one of the best national destinations for those who love adventure travel and, of course, nature. Passing through the Chapada Diamantina park gives the opportunity to see (and feel) some of the most spectacular waterfalls in Brazil, including the Cachoeira da Fumaça, Cachoeira do Buracão and Cachoeira do Sossego. And since they are almost always accompanied by beautiful trails, Chapada Diamantina is ideal for having a break from the city life and relaxing (but always with a little physical exercise).</p>
-          <br>
+          <p>Another contribution by <a class="btn-nav4" href="https://www.urbansystems.com.br/cidades" target="_blank" rel="noopener noreferrer"><u>Urban Systems</u></a>, a study based on the calculation of the Market Quality Index (IQM), maps the main national and international publications on the themes of intelligent, connected and sustainable cities, as well as various articles on:
 
-          <p style="text-align:left" class="font1 size2" id="2">2. Gramado</p>
-          <hr>
-          <p>Gramado has won the title of second to best national destination. The city is one of the main winter destinations in Brazil, but offers great attractions year-round, including the famous Natal Luz, which happens at the peak of summer. It deceives those who think that for being a small town there is not much to do in Gramado, but anyone who visits the area will find several parks, museums, attractions and restaurants that make Gramado not only a quiet and charming place, but a destination very suitable for families with children or couples in search of a romantic getaway.</p>
-          <p class="space">The main city of the Serra Gaúcha, Gramado is undoubtedly one of the best national destinations. The city pleases everyone and always offers new leisure options. This makes a visit to Gramado never the same! If you're visiting Gramado for the first time, start by Av. Borges de Medeiros, where you'll find the São Pedro church and the Rua Coberta, as well as charming restaurants. Not far away, Lago Negro (Black Lake) is ideal for taking an outdoor walk and make beautiful pictures, especially when the hydrangeas are flourishing.</p>
-          <br>
+          <p>– Mobility;<br>
+             – Urbanism;<br>
+             – Health;<br>
+             – Education;<br>
+             – Economy</p>
+            
+          <p class="space">The table below is based on the analysis of the Ranking Connected Smart Cities of 2020 regarding the main Brazilian cities considered most modern and sustainable.</p>
+          <img class="img-fluid rounded" src="img/posts/modern.jpg" alt="" width="70%">
 
-          <p style="text-align:left" class="font1 size2" id="3">3. Jalapão</p>
-          <hr>
-          <p>Third place among the best national destinations, Jalapão offers visitors rapturous landscapes amidst the immensity of 34.000 square kilometers of preserved nature in the state of Tocantins, provided with trails, rock formations and, different from what seems at first sight, lots of water. Get ready for the intense sun and make sure that there will always be a well or a river to find refreshment along the way.</p>
-          <p class="space">Some of the most sought after attractions include the dunes of Jalapão, and are always on the tour's itinarary offered by local agencies. The same goes for the Cachoeira do Formiga and the Cachoeira da Velha, the two main waterfalls. And whoever visits the Cachoeira da Velha should take a dip in the pure waters of the Prainha do Rio Novo. Some of the other beautiful waterfalls to stop for a bath include the Cachoeira do Rio Soninho, Cachoeira das Araras, Cachoeira da Roncadeira, Cachoeira do Escorrega Macaco and Cachoeira do Lajeado. Not to mention the beautiful scenery of the Cânion do Sussuapara, where you can always find a small waterfall to refresh.</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="4">4. Fernando de Noronha</p>
-          <hr>
-          <p>The archipelago of Fernando de Noronha stirs with the imagination of many travel enthousiasts. One of the best national destinations for sea lovers, Noronha has a fame of being a paradise on earth. Noronha has some of the best beaches in Brazil, the water has an incredible color and the marine life is so rich that it is almost impossible to describe. Scuba diving is considered one of the best in the world and even close to the beaches you can swim between small sharks and turtles.</p>
-          <p class="space">It won't be difficult to decide what to do in Fernando de Noronha. Everything revolves around the spectacular sea surrounding the place. If you wish for crystalline water and paradisiacal views, go to the beach of Praia do Sancho or Baía dos Porcos. If you want to stay close to the centre, Praia da Conceição is the best option, especially at the end of the afternoon when it becomes the meeting point of Noronha. Those who want to get away from the movement will like the Praia do Leão beach. For those who enjoy diving and marine life, go to the beaches of Praia do Sueste or Praia do Porto. If you are into surfing, the Cacimba do Padre will be excellent. And if you like a good walk, it's worth doing the trails of the Atalaia.</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="5">5. João Pessoa</p>
-          <hr>
-          <p>Do you want to travel cheap? João Pessoa is the place! The capital was chosen as the best in the category cost-benefit among the best national destinations. João Pessoa blends tranquility with beauty and those who travel to the city perceive its slow pace, which allows small pleasures such as walking along the beach and taking a dip in the sea. The city's waterfront is an invitation to relax, allied to the wonderful cuisine – which mixes fish and seafood with the north-eastern flavors.</p>
-          <p class="space">The days in João Pessoa are almost always dedicated to the sea. The city is calm, has a beautiful waterfront and many of the hotels are close to the beaches. When visiting João Pessoa, it is worth checking out Tambaú, Cabo Branco and Bessa, great beaches with a beautiful greenish sea. It is also worth visiting the natural pools of Picãozinho, in front of Tambaú, and the island of Areia Vermelha, a sandbank that is formed during low tide. If you have more time and want to discover more of the state's beautiful beaches, also visit the Barra de Gramame, Praia de Tambaba, Coqueirinho and other beaches of the southern coast of Paraíba. The tour is wonderful!</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="6">6. Tiradentes</p>
-          <hr>
-          <p>From the state of Minas Gerais comes the first representative of the Southeast region among the best national destinations. Tiradentes treats visitors to relaxing days. The city is beautiful, quiet, very small and without much tourist obligations to fulfill. The perfect combination for those who want to disconnect from the day to day rush to enjoy moments of pure delight amid lovely landscapes and enchanting colonial mansions. All catered to the best of Minas Gerais tradition, history, colorful architecture and a delicious gastronomy.</p>
-          <p class="space">Tiradentes is a great city to be enjoyed unhurriedly. You will have plenty of time to explore the excellent gastronomy of the city and also neighboring destinations such as Congonhas, Ouro Preto, Mariana and the lovely Bichinho. And if you're going to São João del Rei, make sure you go with Maria Fumaça! The historic center of Tiradentes concentrates most of the city's attractions, which includes tourist sights, churches, restaurants, shops and inns. Start the trip on the Largo das Forras and then go through the streets of Padre Toledo, Direita and Ministro Gabriel Passos. Visiting the three of them, you will have already seen almost all the main tourist points of Tiradentes.</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="7">7. São Miguel do Gostoso</p>
-          <hr>
-          <p>At 100 kilometers from Natal hides this gem on the Brazilian coast that gradually has been discovered by tourists. São Miguel do Gostoso, elected one of the best national destinations, enchants visitors with the beauty of its beaches and the tranquility of the old fishing village, where the ground zero of the BR-101 is located (one of the largest highways in the country, extending for almost 5.000 kilometers). The beaches of São Miguel do Gostoso – often deserted – enchant with dunes, warm waters and beautiful rock formations. The city is very simple, quiet and seems to have stopped in time. There are several options of inns, some simpler and some more luxurious. As for the gastronomy, expect to eat very fresh and always delicious fish there!</p>
-          <p class="space">Among the beaches of São Miguel do Gostoso, Tourinhos is the most famous of them. The climate there is great, the landscapes incredible and the sunset always beautiful! It is also worth checking out the Ponta de Santo Cristo, Praia do Cardeiro, Praia de Maceió e Praia da Xepa. These beaches are the closest to the village and, as they overlap, it is very difficult to define where one starts and the other ends. After relaxing on the beaches, invest in some tours throughout the region. It is worth taking a dip in the natural pools of Parrachos de Perobas and Parrachos de Maracajaú. With some more time on your hands, a good option is to visit Galinhos as well.</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="8">8. Alter do Chão</p>
-          <hr>
-          <p>The amazing landscape that appears on the outskirts of Alter do Chão in the dry period makes the small village in the west of Pará one of the best national destinations for beach lovers. An important detail, however, makes Alter do Chão even more special. We are not talking about beaches on the edge of the Atlantic Ocean and its immensity of saltwater, but rather of grandiose freshwater rivers surrounded by the most intense Amazonian green. Thinking about more than 100 kilometers of beaches far from the Brazilian coast can seem strange, but the truth is that Alter do Chão hides a paradise with countless sand formations ready to enchant any lover of paradisiacal scenarios.</p>
-          <p class="space">The days in Alter do Chão are dedicated to walks that lead to beaches, rivers, ponds, forests, riverside communities, igapós, igarapés, forests and channels that are the synthesis of the beauty of the region. And every day ends with a wonderful sunset! The ideal, when heading to Alter do Chão, is to get to know a little bit of every landscape. It is possible to get to know several sights of Alter do Chão on foot or by car, but the most common is to do everything by boat. There will be no shortage of things to do in Alter do Chão during your trip.</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="9">9. Bento Gonçalves</p>
-          <hr>
-          <p>The Serra Gaúcha goes far beyond Gramado and Bento Gonçalves has also been elected to be among the best national destinations. The city has appeard in the top-10 because of its wonderful Vale dos Vinhedos (Vineyard Valley). In addition, Bento Gonçalves is very charming and has a wonderful gastronomy! A walk through the Vale dos Vinhedos includes beautiful landscapes, immersion in the culture of Italian immigrants, spectacular restaurants and, of course, visits to the dozens of wineries from all sizes – from canteens to large companies known internationally.</p>
-          <p class="space">Those who embark on a trip to Bento Gonçalves are almost always in search of the wonderful wineries present in the region. And there is no reason not to. Visits render unforgettable moments and, of course, sensational wine tastings. If the idea is to learn more about the winery production in the region, the ideal is to get organized. There are many wineries open to tourism and there are several types of visitation possible.</p>
-          <br>
-
-          <p style="text-align:left" class="font1 size2" id="10">10. São Miguel dos Milagres</p>
-          <hr>
-          <p>On the way between Maceió and Maragogi, São Miguel dos Milagres closes the top-10 of best national destinations. The region is perfect for those who want to enjoy the crystalline sea of the Coral Coast in Alagoas and, above all, relax in front of the sea. São Miguel dos Milagres is for those looking for simplicity, tranquility and wanting to rest for a few days without anything to worry about.</p>
-          <p>In São Miguel dos Milagres the days revolve around the sea. You can enjoy the beauty of Alagoas on destinations such as Praia do Toque, Praia de São Miguel dos Milagres and Praia do Patacho. These are the main beaches, but are not the only ones. It is also worth walking to the Capela dos Milagres while touring the beaches of Praia do Riacho, Praia do Marceneiro and Praia da Barra de Camaragibe. All are calm stretches of sand and often deserted. Stay aware of the tide to have the opportunity to see the varying state of the beaches throughout the day.</p>
-          
-          </div>
+        </div>
         </div>
       
 
@@ -763,18 +741,11 @@ div.sticky {
         <div class="padding2-2">
           <div class="display3 card my-4">
             <h5 style="text-align:left" class="card-header font2">Content</h5>
-              <div class="card-body autocom-box">
-                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">#1 Lençóis</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">#2 Gramado</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted padding3">#3 Jalapão</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#4"><h6 style="text-align:left" class="text-muted padding3">#4 Fernando de Noronha</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#5"><h6 style="text-align:left" class="text-muted padding3">#5 João Pessoa</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#6"><h6 style="text-align:left" class="text-muted padding3">#6 Tiradentes</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#7"><h6 style="text-align:left" class="text-muted padding3">#7 São Miguel do Gostoso</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#8"><h6 style="text-align:left" class="text-muted padding3">#8 Alter do Chão</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#9"><h6 style="text-align:left" class="text-muted padding3">#9 Bento Gonçalves</h6></a>
-                <a class="btn-nav js-scroll-trigger" href="#10"><h6 style="text-align:left" class="text-muted minbreak">#10 São Miguel dos Milagres</h6></a>
-            </div>
+              <div class="card-body">
+                <a class="btn-nav js-scroll-trigger" href="#1"><h6 style="text-align:left" class="text-muted padding3">Human development ranking per state</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#2"><h6 style="text-align:left" class="text-muted padding3">Brazil's best capital cities</h6></a>
+                <a class="btn-nav js-scroll-trigger" href="#3"><h6 style="text-align:left" class="text-muted minbreak">Brazil's most modern cities</h6></a>
+              </div>
           </div>
         </div>
 
@@ -789,9 +760,9 @@ div.sticky {
                 <div class="noselect">
                   <h6>Line Hight <span id="result3"></span></h6>
                   <div class="steps" id="steps3">
-                    <span id="step7" class="step-1">&#8213;</span>
-                    <span id="step8" class="step-2">&#8213;</span>
-                    <span id="step9" class="step-3">&#8213;</span>
+                    <span id="step7">&#8213;</span>
+                    <span id="step8">&#8213;</span>
+                    <span id="step9">&#8213;</span>
                   </div>
                 </div>
               </td>
@@ -802,9 +773,9 @@ div.sticky {
                 <div class="noselect">
                   <h6>Text Size <span id="result4"></span></h6>
                   <div class="steps" id="steps4">
-                    <span id="step10" class="step-1">&#8213;</span>
-                    <span id="step11" class="step-2">&#8213;</span>
-                    <span id="step12" class="step-3">&#8213;</span>
+                    <span id="step10">&#8213;</span>
+                    <span id="step11">&#8213;</span>
+                    <span id="step12">&#8213;</span>
                   </div>
                 </div>
               </td>
@@ -849,18 +820,18 @@ div.sticky {
 
 
   <!-- Footer -->
-  <footer class="footer bg-light">
+  <footer class="footer bg-light"> 
     <div class="col-lg-6 h-100 text-center my-auto display2">
       <ul class="list-inline mb-2">
         <li class="list-inline-item spacing">
-          <a class="color6 font4 spacing dark2" href="post2dark.html">Dark Mode <i class="fas fa-moon"></i></a>
+          <a class="color6 font4 spacing dark2" href="best-places-to-live-in-brazil+.html">Dark Mode <i class="fas fa-moon"></i></a>
         </li>
         <li class="list-inline-item spacing">
           <a class="weight2 color6 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
         </li>
       </ul>
     </div>
- 
+
     <div class="container">
       <div class="row">
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2">
@@ -875,7 +846,7 @@ div.sticky {
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
               <a class="weight2 color6 font4" href="terms.html">Terms of Use</a>
-            </li> 
+            </li>
             <li class="list-inline-item">&sdot;</li>
             <li class="list-inline-item">
               <a class="weight2 color6 font4" href="privacy.html">Privacy Policy</a>
@@ -887,7 +858,7 @@ div.sticky {
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="weight2 color6 font4 dark" href="post2dark.html">Dark Mode <i class="fas fa-moon"></i></a>
+              <a class="weight2 color6 font4 dark" href="best-places-to-live-in-brazil+.html">Dark Mode <i class="fas fa-moon"></i></a>
             </li>
             <li class="list-inline-item">
               <a class="weight2 color6 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
@@ -897,7 +868,7 @@ div.sticky {
       </div>
     </div>
   </footer>
-
+ 
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
