@@ -12,7 +12,7 @@
 
   <!-- Google adsense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1423073810053487" crossorigin="anonymous"></script>
-
+  
   <!-- Custom Fonts -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
@@ -132,16 +132,9 @@ function myFunction() {
   padding-right: 10px;
 }
 
-.color5{
-  color:#f9f8fa;
-}
-
 .color6{
-    color: #2089ac;
-  }
-
-.custom2{
-  box-shadow: 0px 2px 4px 0 rgba(0,0,0,.8);
+  color: #2089ac;
+  text-shadow: black 0px 0px 10px;
 }
 
 .size h3{font-size:1.1rem;} .size h4{font-size:2.1rem;} 
@@ -174,6 +167,9 @@ function myFunction() {
 @media (max-width:992px){.display2{display:block;}}
 @media (max-width:992px){.display3{display:none;}}
 
+.text-black{
+    color: rgb(206, 206, 206);
+}
 @media (max-width:768px){
   .text-black h3{
     font-size:1.2rem;
@@ -181,7 +177,7 @@ function myFunction() {
 }
 
 .text-black:hover{
-  color:#1D80A0;
+  color:  rgb(206, 206, 206);
 }
 
 .post-subtitle{
@@ -214,12 +210,86 @@ function myFunction() {
   margin-bottom: 1rem;
 }
 
-.color3{
-  color: darkslategrey;
+
+
+
+
+
+
+
+/* dark theme */
+.navbar{
+  background-color: #22252a;
 }
 
-.color4{
-  color: rgb(38, 97, 97);
+.btn-nav{
+  color: #bfbfbf!important;
+}
+.btn-nav:hover{
+  color: white!important;
+}
+
+.btn-nav2{
+  color: white!important;
+}
+
+.btn-nav3{
+  margin-top: 6%;
+}
+@media (max-width:992px){
+.btn-nav3{
+  margin-top: 2%;
+}}
+
+.bgdark{
+  background-color: #1f2126;
+}
+
+.email-box{
+  background-color: rgba(0, 0, 0, 0.6);
+  color:#f9f8fa!important;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.email-box:focus{
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.6);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  outline:none;
+}
+
+.footer{
+  background-color: #1f2126;
+}
+
+.color3{
+  color: #bfbfbf!important;
+}
+
+.color5{
+  color:#f9f8fa;
+}
+
+.btn-show3{
+  border-color:#bfbfbf!important; 
+  background-color:#22252a!important;
+} 
+
+.custom3{
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.4);
+}
+ 
+.dark2:hover{
+  text-decoration: none;
+  color: white!important;
+}
+
+.dark3{
+  padding-right: 2rem;
+}
+.dark3:hover{
+  text-decoration: none;
+  color: white!important;
 }
 
 .autocom-box{
@@ -242,21 +312,21 @@ function myFunction() {
   <br><br>
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img2/logos/logoikigai.png" alt=""/></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand js-scroll-trigger" href="index+.html"><img src="img2/logos/logoikigaidark.png" alt=""/></a>
+      <button class="navbar-toggler text-white navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item upper">
-            <a class="nav-link btn-nav" href="index.html">Home</a>
+            <a class="nav-link btn-nav" href="index+.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn-nav" href="travel.html">Travel</a>
+            <a class="nav-link btn-nav" href="travel+.html">Travel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link btn-nav" href="immigration.html">Immigration</a>
+            <a class="nav-link btn-nav" href="immigration+.html">Immigration</a>
           </li>
           <li class="nav-item">
             <a class="nav-link btn-nav2 js-scroll-trigger" href="#page-top">Articles</a>
@@ -278,7 +348,7 @@ function myFunction() {
 
 
  
-  <header class="masthead8">
+  <header class="masthead8-2">
 
   
   
@@ -291,7 +361,7 @@ function myFunction() {
     <div class="size text-center">
         <div>
           <h4 class="section-heading color6 font3">Articles.</h4>
-          <h3 class="lead mb-0 text-muted padding2">Find the travel- or immigration experience you’re looking for</h3>
+          <h3 class="lead mb-0 color5 padding2">Find the travel- or immigration experience you’re looking for</h3>
         </div>
     </div>
   </section>
@@ -319,137 +389,139 @@ function myFunction() {
 
         <!-- Post Content -->
           <div class="post-preview col-lg-6" id="top10">
-            <hr/>
-            <a class="text-black" href="top-10-tourist-destinations.html">
-                <h3 class="post-title color4 font3">Brazil's top-10 tourist destinations</h3>
-                <p class="post-subtitle color3 font5 autocom-box">Electing the best destinations in Brazil is not a simple task, especially when there are so many paradises to choose from. It would be unfair if we made that ranking ourselves. Therefore, in the face of such responsibility, the results were computed based on the votes of more than 25.000 travellers, considering trips carried out by them in 2019 or the previous year.</p>
-            </a>
+              <hr/>
+              <a class="text-black" href="top-10-tourist-destinations+.html">
+                  <h3 class="post-title color5 font3">Brazil's top-10 tourist destinations</h3>
+                  <p class="post-subtitle font5 autocom-box">Electing the best destinations in Brazil is not a simple task, especially when there are so many paradises to choose from. It would be unfair if we made that ranking ourselves. Therefore, in the face of such responsibility, the results were computed based on the votes of more than 25.000 travellers, considering trips carried out by them in 2019 or the previous year.</p>
+              </a>
             <hr/>
           </div>
           
           <div class="post-preview col-lg-6" id="cpf">
-            <hr/>
-            <a class="text-black" href="how-to-get-a-cpf.html">
-                <h3 class="post-title color4 font3">How to get a CPF</h3>
-                <p class="post-subtitle color3 font5 autocom-box">The Individual Taxpayer Registration, known as the Cadastro Pessoa Física (CPF), is the registration of foreigners in the Federal Revenue Service (Receita Federal). This document facilitates the taxable life of the carrier, allowing the payment of taxes, the opening of bank accounts and the realization of financial investments.</p>
+              <hr/>
+            <a class="text-black" href="how-to-get-a-cpf+.html">
+                <h3 class="post-title color5 font3">How to get a CPF</h3>
+                <p class="post-subtitle font5 autocom-box">The Individual Taxpayer Registration, known as the Cadastro Pessoa Física (CPF), is the registration of foreigners in the Federal Revenue Service (Receita Federal). This document facilitates the taxable life of the carrier, allowing the payment of taxes, the opening of bank accounts and the realization of financial investments.</p>
             </a>
             <hr>
           </div>
           
           <div class="post-preview col-lg-6" id="wvisa">
-            <hr/>
-            <a class="text-black" href="work-visa.html">
-                <h3 class="post-title color4 font3">Work visa</h3>
-                <p class="post-subtitle color3 font5 autocom-box">The work visa for foreigners in Brazil allows the hiring of a foreigner to engage in remunerated activity and employment. Work visa with an employment contract can be up to two years, and request for extension of the same period or more years to change the temporary visa into permanent is possible.</p>
+              <hr/>
+            <a class="text-black" href="work-visa+.html">
+                <h3 class="post-title color5 font3">Work visa</h3>
+                <p class="post-subtitle font5 autocom-box">The work visa for foreigners in Brazil allows the hiring of a foreigner to engage in remunerated activity and employment. Work visa with an employment contract can be up to two years, and request for extension of the same period or more years to change the temporary visa into permanent is possible.</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="ivisa">
-            <hr/>
-            <a class="text-black" href="investor-visa.html">
-                <h3 class="post-title color4 font3">Investor visa</h3>
-                <p class="post-subtitle color3 font5 autocom-box">Getting an investor visa allows a foreigner to live and work permanently in Brazil. If you have at least R$500,000 to invest in Brazil, you can apply for an investor visa, which will allow you to invest in real estate, start a business or invest in an existing Brazilian company.</p>
+              <hr/>
+            <a class="text-black" href="investor-visa+.html">
+                <h3 class="post-title color5 font3">Investor visa</h3>
+                <p class="post-subtitle font5 autocom-box">Getting an investor visa allows a foreigner to live and work permanently in Brazil. If you have at least R$500,000 to invest in Brazil, you can apply for an investor visa, which will allow you to invest in real estate, start a business or invest in an existing Brazilian company.</p>
             </a>
             <hr>
           </div>
-          
+
           <div class="post-preview col-lg-6" id="fvisa">
-            <hr/>
-            <a class="text-black" href="family-reunion-visa.html">
-                <h3 class="post-title color4 font3">Family reunion visa</h3>
-                <p class="post-subtitle color3 font5 autocom-box">To request residence in Brazil it is necessary to fit into the hypotheses provided for by the Brazilian government. One of the simplest ways to get permanence in Brazil is by family reunion, either through the visa or the residence permit. This modality is a right to both the resident migrant and the Brazilian who has foreign ties.</p>
+              <hr/>
+            <a class="text-black" href="family-reunion-visa+.html">
+                <h3 class="post-title color5 font3">Family reunion visa</h3>
+                <p class="post-subtitle font5 autocom-box">To request residence in Brazil it is necessary to fit into the hypotheses provided for by the Brazilian government. One of the simplest ways to get permanence in Brazil is by family reunion, either through the visa or the residence permit. This modality is a right to both the resident migrant and the Brazilian who has foreign ties.</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="money">
             <hr/>
-            <a class="text-black" href="how-to-send-money-to-brazil.html">
-              <h3 class="post-title color4 font3">How to send money to Brazil</h3>
-              <p class="post-subtitle color3 font5 autocom-box">Sending money to Brazil is more complex than most foreign citizens might expect. Brazil has a history of extreme regulation of money entering and leaving the country. Commercial banks in Brazil such as Bradesco and Itaú may take weeks to release funds until clients have provided many documents required and their slow currency exchange departments have thoroughly reviewed these documents.</p>
+            <a class="text-black" href="how-to-send-money-to-brazil+.html">
+              <h3 class="post-title color5 font3">How to send money to Brazil</h3>
+              <p class="post-subtitle font5 autocom-box">Sending money to Brazil is more complex than most foreign citizens might expect. Brazil has a history of extreme regulation of money entering and leaving the country. Commercial banks in Brazil such as Bradesco and Itaú may take weeks to release funds until clients have provided many documents required and their slow currency exchange departments have thoroughly reviewed these documents.</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="citizen">
             <hr/>
-            <a class="text-black" href="citizenship-through-naturalization.html">
-              <h3 class="post-title color4 font3">Citizenship through naturalization</h3>
-              <p class="post-subtitle color3 font5 autocom-box">Applying for citizenship is the most complex and delicate step for anyone who wishes to legally live in Brazil. It’s important to comprehend that the concession of Brazilian citizenship to a foreigner means that the applicant will have right not only to his/her original nationality but also to the Brazilian one, being it temporary or permanent.</p>
+            <a class="text-black" href="citizenship-through-naturalization+.html">
+              <h3 class="post-title color5 font3">Citizenship through naturalization</h3>
+              <p class="post-subtitle font5 autocom-box">Applying for citizenship is the most complex and delicate step for anyone who wishes to legally live in Brazil. It’s important to comprehend that the concession of Brazilian citizenship to a foreigner means that the applicant will have right not only to his/her original nationality but also to the Brazilian one, being it temporary or permanent.</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="extend">
             <hr/>
-            <a class="text-black" href="how-to-extend-your-tourist-visa.html">
-              <h3 class="post-title color4 font3">How to extend your tourist visa</h3>
-              <p class="post-subtitle color3 font5 autocom-box">When travelling to Brazil on a tourist visa, a question that commonly arises for foreigners who really liked the country or developed some form of attachment to it, is the following: Is it possible to stay in the country as a tourist for more than the standard 90 days?</p>
+            <a class="text-black" href="how-to-extend-your-tourist-visa+.html">
+              <h3 class="post-title color5 font3">How to extend your tourist visa</h3>
+              <p class="post-subtitle font5 autocom-box">When travelling to Brazil on a tourist visa, a question that commonly arises for foreigners who really liked the country or developed some form of attachment to it, is the following: Is it possible to stay in the country as a tourist for more than the standard 90 days?</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="live">
             <hr/>
-            <a class="text-black" href="best-places-to-live-in-brazil.html">
-              <h3 class="post-title color4 font3">Best places to live in Brazil</h3>
-              <p class="post-subtitle color3 font5 autocom-box">Dealing with changes is a task that requires the analysis of several factors, especially when moving to a new country. Most likely the cost of living will be one of the conditions you will take into account before making any decision, but also factors such as work, education, healthcare, safety and transportation are certainly a priority.</p>
+            <a class="text-black" href="best-places-to-live-in-brazil+.html">
+              <h3 class="post-title color5 font3">Best places to live in Brazil</h3>
+              <p class="post-subtitle font5 autocom-box">Dealing with changes is a task that requires the analysis of several factors, especially when moving to a new country. Most likely the cost of living will be one of the conditions you will take into account before making any decision, but also factors such as work, education, healthcare, safety and transportation are certainly a priority.</p>
             </a>
             <hr>
           </div>
-          
+
           <div class="post-preview col-lg-6" id="foods">
             <hr/>
-            <a class="text-black" href="typical-brazilian-foods.html">
-                <h3 class="post-title color4 font3">Typical Brazilian foods</h3>
-                <p class="post-subtitle color3 font5 autocom-box">What is typical Brazilian food? This may be a question you've asked yourself at some point. After all, Brazil is a country of continental proportions and with such a varied gastronomy, it is indeed difficult to objectively define an answer to this question. This is because there are many different styles arising from the cultural influences Brazil received throughout its social formation.</p>
+            <a class="text-black" href="typical-brazilian-foods+.html">
+                <h3 class="post-title color5 font3">Typical Brazilian foods</h3>
+                <p class="post-subtitle font5 autocom-box">What is typical Brazilian food? This may be a question you've asked yourself at some point. After all, Brazil is a country of continental proportions and with such a varied gastronomy, it is indeed difficult to objectively define an answer to this question. This is because there are many different styles arising from the cultural influences Brazil received throughout its social formation.</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="backpack">
             <hr/>
-            <a class="text-black" href="backpacking-&-travel-routes.html">
-                <h3 class="post-title color4 font3">Backpacking / travel routes</h3>
-                <p class="post-subtitle color3 font5 autocom-box">Often thought of as a separate part of South America entirely, Brazil is by far the largest country on the continent covering over 47% of the landmass. It’s so big that it covers four different time zones! For sheer size reasons, Brazil can be a trip entirely on its own, but with a different language, culture and feel to the rest of South America it can seem like you are in a different continent altogether.</p>
+            <a class="text-black" href="backpacking-&-travel-routes+.html">
+                <h3 class="post-title color5 font3">Backpacking / travel routes</h3>
+                <p class="post-subtitle font5 autocom-box">Often thought of as a separate part of South America entirely, Brazil is by far the largest country on the continent covering over 47% of the landmass. It’s so big that it covers four different time zones! For sheer size reasons, Brazil can be a trip entirely on its own, but with a different language, culture and feel to the rest of South America it can seem like you are in a different continent altogether.</p>
             </a>
             <hr>
           </div>
 
           <div class="post-preview col-lg-6" id="language">
             <hr/>
-            <a class="text-black" href="portuguese-proficiency-test.html">
-                <h3 class="post-title color4 font3">Portuguese proficiency test</h3>
-                <p class="post-subtitle color3 font5 autocom-box">As a general rule, you don’t need to speak Portuguese to visit Brazil, but having some knowledge of Portuguese will make your travel a lot easier. English is not widely spoken in Brazil, so you need to know some Portuguese to get around. But don’t let your lack of Portuguese stop you from going. Instead, let going to Brazil be the reason you start learning Portuguese.</p>
+            <a class="text-black" href="portuguese-proficiency-test+.html">
+                <h3 class="post-title color5 font3">Portuguese proficiency test</h3>
+                <p class="post-subtitle font5 autocom-box">As a general rule, you don’t need to speak Portuguese to visit Brazil, but having some knowledge of Portuguese will make your travel a lot easier. English is not widely spoken in Brazil, so you need to know some Portuguese to get around. But don’t let your lack of Portuguese stop you from going. Instead, let going to Brazil be the reason you start learning Portuguese.</p>
             </a>
             <hr>
           </div>
 
+
+
+          
           <!-- <div class="post-preview col-lg-6" id="real">
-            <hr/>
-            <a class="text-black" href="post...html">
-                <h3 class="post-title color4 font3">Buying real estate in Brazil</h3>
-                <p class="post-subtitle color3 font5 autocom-box"></p>
-            </a>
-            <hr>
+              <hr/>
+              <a class="text-black" href="post...html">
+                  <h3 class="post-title color5 font3">Buying real estate in Brazil</h3>
+                  <p class="post-subtitle font5 autocom-box"></p>
+              </a>
+              <hr>
           </div>
           
           <div class="post-preview col-lg-6" id="license">
             <hr/>
             <a class="text-black" href="post...html">
-                <h3 class="post-title color4 font3">Driver's license</h3>
-                <p class="post-subtitle color3 font5 autocom-box"></p>
+                <h3 class="post-title color5 font3">Driver's license</h3>
+                <p class="post-subtitle font5 autocom-box"></p>
             </a>
             <hr>
           </div>
-
           
           <div class="post-preview col-lg-6" id="untouched">
             <hr/>
             <a class="text-black" href="post...html">
-                <h3 class="post-title color4 font3">Most untouched destinations</h3>
-                <p class="post-subtitle color3 font5 autocom-box"></p>
+                <h3 class="post-title color5 font3">Most untouched destinations</h3>
+                <p class="post-subtitle font5 autocom-box"></p>
             </a>
             <hr>
           </div> -->
@@ -480,8 +552,8 @@ function myFunction() {
 
   <!-- Call to Action -->
   <section class="call-to-action text-center" id="join">
-    <form action="https://formsubmit.co/remy.duijn@gmail.com" method="POST">
-      <div class="container">
+      <form action="https://formsubmit.co/remy.duijn@gmail.com" method="POST">
+        <div class="container">
         <div class="row">
           <div class="col-xl-10 mx-auto">
             <h3 class="padding mb-4 font4 color5">Get free access to travel deals, tips and exclusive discounts!</h3>
@@ -490,10 +562,10 @@ function myFunction() {
             <form>
               <div class="form-row">
                 <div class="col-12 col-md-8 mb-2 mb-md-0">
-                  <input type="email" name="email" class="form-control email-box custom2 font4" placeholder="Email address" required>
+                  <input type="email" name="email" class="form-control email-box font4" placeholder="Email address" required>
                 </div>
                 <div class="col-12 col-md-4">
-                  <button type="submit" class="btn btn-block btn-show custom2 font4">Subscribe</button>
+                  <button type="submit" class="btn btn-block btn-show custom3 font4 color5">Subscribe</button>
                 </div>
               </div>
               <p class="share">*We do not share your information</p>
@@ -501,8 +573,7 @@ function myFunction() {
           </div>
         </div>
       </div>
-    </form>
-  </section>
+    </section>
 
 
 
@@ -510,48 +581,48 @@ function myFunction() {
 
 
   <!-- Footer -->
-  <footer class="footer bg-light"> 
+<footer class="footer">
     <div class="col-lg-6 h-100 text-center my-auto display2">
       <ul class="list-inline mb-2">
         <li class="list-inline-item spacing">
-          <a class="color6 font4 spacing dark2" href="articles+.html">Dark Mode <i class="fas fa-moon"></i></a>
+          <a class="color3 font4 spacing dark2" href="articles.html">Light Mode <i class="fas fa-sun"></i></a>
         </li>
         <li class="list-inline-item spacing">
-          <a class="weight2 color6 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+          <a class="weight2 color3 font4 spacing" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
         </li>
-      </ul>
+      </ul> 
     </div>
-
+  
     <div class="container">
       <div class="row">
         <div class="col-lg-6 h-100 text-center text-lg-left my-auto spacing2">
           <ul class="list-inline mb-2">
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="about.html">About</a>
+              <a class="weight2 color3 font4" href="about+.html">About</a>
+            </li>
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="contact+.html">Contact</a>
+            </li>
+            <li class="list-inline-item text-muted">&sdot;</li>
+            <li class="list-inline-item">
+              <a class="weight2 color3 font4" href="terms+.html">Terms of Use</a>
             </li> 
-            <li class="list-inline-item">&sdot;</li>
+            <li class="list-inline-item text-muted">&sdot;</li>
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="contact.html">Contact</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="terms.html">Terms of Use</a>
-            </li>
-            <li class="list-inline-item">&sdot;</li>
-            <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="privacy.html">Privacy Policy</a>
+              <a class="weight2 color3 font4" href="privacy+.html">Privacy Policy</a>
             </li>
           </ul>
           <p class="text-muted small mb-4 mb-lg-0 font4">&copy; Ikigai Brazil 2021. All Rights Reserved.</p>
         </div>
-
+  
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto display3">
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="weight2 color6 font4 dark" href="articles+.html">Dark Mode <i class="fas fa-moon"></i></a>
+              <a class="color3 font4 dark3" href="articles.html">Light Mode <i class="fas fa-sun"></i></a>
             </li>
             <li class="list-inline-item">
-              <a class="weight2 color6 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
+              <a class="weight2 color3 font4" href="https://www.instagram.com/ikigaibrazil.travel/" target="_blank" rel="noopener noreferrer">@ikigaibrazil <i class="fab fa-instagram sizefb"></i></a>
             </li>
           </ul>
         </div>
